@@ -66,11 +66,12 @@ Respect natural-language modifiers such as `for a junior admin` or `for architec
 Complete this planning silently before writing the visible answer. The response must begin with the requested output, never with planning notes, a brain dump, or a reasoning tag.
 
 1. **Gather:** Identify the granular named concepts needed for a useful, reasonably complete map of the requested scope. Check coverage against the user's goal and level.
-2. **Cluster bottom-up:** Group details into sub-categories, categories, and domains where those distinctions are meaningful. Preserve pedagogical sequence and avoid overlap.
-3. **Apply the Decision Boundary:** Evaluate each substantive sub-category for a Sub-Index using the rule below. Mark only those that qualify.
-4. **Elaborate qualifying roots:** For each qualifying sub-category, organize a focused second pass: the existing sub-category root → Sub-Index groups → Sub-Index items → terminal granular details. Do not create a third pass.
-5. **Plan local placement:** Associate each Sub-Index with its parent root block so it can appear immediately after that block's Master Index portion.
-6. **Choose the visible entry level:** Apply adaptive depth compression only after the conceptual map is sound. Omit redundant outer wrappers; do not remove concepts, recategorize them to satisfy a numeric threshold, or change which Sub-Indexes qualify.
+2. **Audit coverage:** For a broad system or platform, check its major capabilities and trust or interaction boundaries against authoritative sources and the user's goal. Look for independently documented choices hidden inside a single generic item, and for major areas missing entirely. For example, a platform's identity architecture may warrant separate coverage of user sign-in, federation, API authorization, and outbound credentials rather than one "authentication" checkbox. Apply this only where those distinctions matter to the requested scope.
+3. **Cluster bottom-up:** Group details into sub-categories, categories, and domains where those distinctions are meaningful. Preserve pedagogical sequence and avoid overlap.
+4. **Apply the Decision Boundary:** Evaluate each substantive sub-category for a Sub-Index using the rule below. Mark only those that qualify.
+5. **Elaborate qualifying roots:** For each qualifying sub-category, organize a focused second pass: the existing sub-category root → Sub-Index groups → Sub-Index items → terminal granular details. Do not create a third pass.
+6. **Plan local placement:** Associate each Sub-Index with its parent root block so it can appear immediately after that block's Master Index portion.
+7. **Choose the visible entry level:** Apply adaptive depth compression only after the conceptual map is sound. Omit redundant outer wrappers; do not remove concepts, recategorize them to satisfy a numeric threshold, or change which Sub-Indexes qualify.
 
 ---
 
@@ -262,6 +263,10 @@ Apply this to the conceptual Sub-Category even when its visible address begins a
 7. **Framing in Index-Only output:** Index-Only contains only structured index blocks, whether or not checkboxes are used; no stage names, preamble, diagram, or Handoff.
 8. **Decorative index layout:** Avoid ASCII boxes, long character rules, repeated icons on every row, whole-line bolding, and italics used solely as pointers. Use the limited heading emojis above.
 9. **Artificial depth or duplicate tracking:** Do not create empty ancestors, force a cluster count, add levels to satisfy the address scheme, or put checkboxes on both a pointer and the same concept's expansion.
+
+## Final Coverage Check
+
+After drafting the full roadmap, compare the visible index with the user's goal, calibrated level, and the concept inventory from pre-flight. Look for major areas that are absent, compressed into a vague leaf, or represented only as an incidental detail under another area. Reassess whether any such area contains independently decidable concepts that qualify for a local Sub-Index. Repair the content and hierarchy before polishing the display; add only distinctions relevant to the requested scope.
 
 ## Final Readability Check
 
