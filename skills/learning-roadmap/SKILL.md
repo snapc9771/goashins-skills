@@ -91,17 +91,17 @@ The number of top-level clusters can inform the choice, but is not a rule. Do no
 
 ### Display addresses
 
-Use the following labels consistently. These are **address positions**, not a demand for seven levels in every branch:
+Use the following labels consistently. These are **address positions**, not a demand for seven levels in every branch. The **Max** column is an upper bound to prevent sprawl — not a target. Use only as many entries as the subject warrants. Prefer natural topic separation over forced grouping; do not merge distinct concepts just to stay under a lower count, and do not pad to reach a higher one.
 
-| Position | Meaning | Label |
-| :--- | :--- | :--- |
-| L1 | Domain | Upper Roman: `I.`, `II.` |
-| L2 | Category | Upper alpha: `A.`, `B.` |
-| L3 | Sub-Category | Arabic: `1.`, `2.` |
-| L4 | Master Index granular concepts | Inline in Non-Checklist; vertical checkboxes when terminal in Checklist |
-| L5 | Sub-Index Group | Lower alpha: `a.`, `b.` |
-| L6 | Sub-Index Item | Lower Roman: `i.`, `ii.` |
-| L7 | Sub-Index granular details | Inline in Non-Checklist; vertical checkboxes when terminal in Checklist |
+| Position | Meaning | Label | Max |
+| :--- | :--- | :--- | :--- |
+| L1 | Domain | Upper Roman: `I.`, `II.` | 10 |
+| L2 | Category | Upper alpha: `A.`, `B.` | 10 |
+| L3 | Sub-Category | Arabic: `1.`, `2.` | 7 |
+| L4 | Master Index granular concepts | Inline in Non-Checklist; vertical checkboxes when terminal in Checklist | 6 |
+| L5 | Sub-Index Group | Lower alpha: `a.`, `b.` | 10 |
+| L6 | Sub-Index Item | Lower Roman: `i.`, `ii.` | 7 |
+| L7 | Sub-Index granular details | Inline in Non-Checklist; vertical checkboxes when terminal in Checklist | 7 |
 
 Addresses concatenate only visible ancestors: `I.A.2`, `A.2`, or `2`. Sub-Index paths continue from the referenced root, such as `I.A.2.a.i`. Restart child labels under each parent. A reference tag and its Sub-Index header must use the same address. Do not imply omitted levels with empty prefixes.
 
@@ -218,7 +218,7 @@ State what the topic is in 2–3 sentences. Identify the primary goal or problem
 
 ### Stage 2: 🗺️ The Structural Blueprint
 
-Generate a `mermaid mindmap` or `flowchart TD` showing only the major meaningful pillars of this roadmap. Usually show 3–6 for a broad topic; show fewer for a narrow topic rather than inventing pillars. Keep detailed concepts in the index.
+Generate a `mermaid mindmap` or `flowchart TD` showing only the major meaningful pillars of this roadmap. Show as many pillars as the index actually has (up to the L1 cap); show fewer for a narrow topic rather than inventing pillars. Keep detailed concepts in the index.
 
 ### Stage 3: 📑 The Grouped Root Blocks
 
