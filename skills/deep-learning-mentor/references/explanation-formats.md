@@ -188,6 +188,24 @@ directly rather than manufacture uncertainty.
 This form teaches a failure mechanism. General troubleshooting without learning
 intent remains outside the mentor's core scope.
 
+## Representation and example choices by goal
+
+| Goal | Helpful navigation/representation | Example must accomplish |
+|---|---|---|
+| Broad concept | Branch map; diagram for difficult relationships; meaningful subsections | Resolve concrete behavior/calculation rather than repeat the mechanism |
+| Comparison | Consistent matrix; corresponding scenario; selective key distinction | Show why the shared case differs, or how complementary layers contribute |
+| Tutorial | Ordered steps; scoped code/config/request pairs; behavior trace | Connect actions to artifact/state changes and expected outcomes |
+| Focused question | Direct answer; compact contrast or callout when useful | Resolve the specific uncertainty without rebuilding the whole topic |
+| Reference | Parallel entry table; interactions near entries | Show how relevant entries work together, including conditional requirements |
+| Diagnosis | Facts/evidence table when useful; state/timing trace | Separate incident facts from hypothetical cases and connect correction to effect |
+
+Use SKILL.md's table, emphasis, blockquote, emoji, and example-completion rules.
+These are choices, not additional mandatory headings or counts. For substantial
+protocol explanations, select request/response evidence when concrete fields/checks
+are central; for algorithms or science, traces or calculations may serve better.
+Keep original callouts distinct from attributed quotations. Do not reproduce
+long prose in tables or format every sentence as a warning.
+
 ## Shared application rules
 
 Apply SKILL.md's scope, depth, navigation, source-fidelity, and no-assessment rules.
@@ -205,4 +223,3 @@ Keep warnings at the affected step and synthesis concise. Tables organize parall
 facts; connected prose supplies reasons. Source lists support, rather than replace,
 explanations. Before sending, verify both the selected structure and whether the
 request's actual uncertainty has been resolved.
-

@@ -8,6 +8,21 @@ principles, and this user's navigation preferences. Source rationale and limits
 are in learning-evidence.md. No particular renderer or diagram count is validated
 as universally best for learning.
 
+## Decide whether a visual is needed
+
+For substantial lessons, consider what the reader must mentally reconstruct.
+Multiple actors/routes, consequential trust/process boundaries, branching,
+state transitions, hierarchies, or quantitative change are selection triggers.
+Choose a visual when it makes an important relationship materially easier to
+follow; a prose-only default can under-explain a multi-actor protocol. A simple
+classification may be better as a table. No representation is required merely
+because its trigger appears; judge its explanatory contribution and user constraints.
+
+For example, a sequence view can expose browser mediation versus a direct token
+exchange, a timeline can expose an update before cache expiry, and a state view
+can expose pending/approved/expired outcomes. These are design examples, not
+subject facts or universal diagram requirements. Select first, then verify content.
+
 ## Plan the explanation before drawing
 
 State privately the question the visual answers and the relationship the reader
@@ -110,7 +125,10 @@ an image is explicitly requested, create a purposeful legible image through an
 available appropriate tool. Use plain text when the chosen renderer is unavailable
 or unsuitable. Preserve scientific precision when plotting quantitative data.
 
-Before sending, inspect source/destination and payload for every consequential
+Before sending, reconsider whether a useful relationship is missing or whether
+an included diagram merely duplicates the overview. Check its contribution,
+interpretation, consistency with concrete examples, and fit for the user's format.
+Then inspect source/destination and payload for every consequential
 arrow; check identities, boundaries, ordering, branch labels, and units against
 the prose and sources. Check that simplified cases are labeled and do not imply
 universal behavior. Use supported syntax and avoid crowded labels.

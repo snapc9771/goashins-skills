@@ -83,6 +83,11 @@ Useful relationships can use Mermaid; comparisons use parallel tables; scientifi
 explanations state assumptions and units. Explicit scope, brevity, and formatting
 requests take precedence. A short prompt alone does not imply a shallow answer.
 
+Depth follows the subject: protocol lessons trace messages and validation,
+algorithm lessons show intermediate state, and mathematics lessons work through
+values and derivations. Examples resolve concrete inputs into outcomes; tables
+and diagrams support the reasoning and stay consistent with the explanation.
+
 ## 🧠 Research-informed, not overclaimed
 
 The design draws on established instructional ideas:

@@ -18,6 +18,10 @@ where its assumptions fail. Preserve conceptual depth, relevant detail, and
 source fidelity. Reduce repetition and irrelevant processing, not necessary
 reasoning, principal branches, or correctness-critical conditions.
 
+For a broad lesson, the reader should be able to reconstruct the main mechanisms:
+participants, consequential inputs and state changes, reasons for operations, and
+outcomes under stated conditions. A polished overview is not a developed lesson.
+
 Practice and learner assessment are outside this skill: no quizzes, assignments,
 Socratic challenges, competence scoring, or gated teaching turns. A worked example
 is fully resolved by the assistant. A requested tutorial is guided explanation;
@@ -70,9 +74,10 @@ A narrow question may still need deep reasoning without a survey of the topic.
   [visual-guidance.md](references/visual-guidance.md) before constructing it.
   Plain comparison/reference tables follow the navigation rules below and do not
   alone trigger this read. Diagrams, plots, and explanatory images do.
-- For broad lessons or substantial comparisons: read the relevant
-  [depth-calibration.md](references/depth-calibration.md) example unless already
-  read in this conversation. Apply its explanatory standard, not its caching scenario.
+- For broad lessons or substantial comparisons: read "Domain-sensitive depth" and
+  the relevant worked-example calibration in
+  [depth-calibration.md](references/depth-calibration.md) unless already read in this
+  conversation. Apply the standard, not the example's subject or fictional contract.
 - For discussing or maintaining pedagogy: read the relevant evidence cards and
   conflict resolutions in [learning-evidence.md](references/learning-evidence.md).
   Read its maintenance protocol when adding/changing research-derived rules.
@@ -96,6 +101,9 @@ mapped, and where its mechanism and boundary are developed. Before sending, chec
 every mapped principal branch against its actual explanation. A row naming a flow
 or policy is not developed coverage. If a branch is intentionally peripheral,
 locate it briefly and make that scope clear rather than silently losing it.
+Distinguish privately between merely mentioned, mapped, and developed branches;
+check that required principal branches reach developed treatment. Develop the
+important branches before adding adjacent categories that dilute their explanation.
 
 For evolving technical standards, check whether the foundational specification
 omits widely used current extensions or later guidance. Build the principal-branch
@@ -120,6 +128,13 @@ Use the running example to illuminate the scope, not to redefine it. For extreme
 broad topics, state a coherent foundational scope, cover its principal branches,
 and locate deeper subfields without implying exhaustive treatment. Do not ask the
 reader to design the lesson or make essential explanation contingent on another turn.
+
+Before drafting a substantial lesson, consider which relationships need a visual:
+multiple actors/routes, consequential boundaries, branching, state transitions,
+hierarchies, or quantitative change. Include a suitable visual when it makes an
+important relationship materially easier to reconstruct. Do not default to prose
+merely to avoid the visual reference, or add a diagram solely to fill a quota.
+Read visual-guidance.md when a diagram, plot, or explanatory image is selected.
 
 ## Full broad lesson: eight required sections
 
@@ -157,6 +172,11 @@ the relevant subsection without giving every variant identical depth.
 Develop conditions -> mechanism -> changes -> outcome in connected reasoning.
 Use subsections for principal branches. Explain why consequential operations are
 needed and what would change if a relevant assumption failed.
+For protocols/APIs, expose the initiating actor, relevant message fields, receiver's
+checks or stored associations, success/failure consequence, and resulting authority
+or state where they explain the mechanism. Do not substitute an endpoint name or
+"exchanges X for Y" for consequential internals. Apply domain-sensitive depth from
+the calibration reference; do not impose protocol chronology on other subjects.
 
 For technology, identify responsibilities, state and identity ownership, lifecycle,
 routing, and consequential process/network/transaction/trust boundaries. Distinguish
@@ -183,6 +203,27 @@ but instantiate its inputs and consequences rather than repeat the abstract
 sequence with fictional names. Vary a material condition when it reveals a
 different result, limitation, or choice. The assistant completes the example.
 
+Use starting conditions -> concrete input/action -> consequential intermediate
+behavior -> resulting output/state -> interpretation as the completion contract.
+A recommendation about which approach to choose is not an operational worked
+example by itself. Neither is the mechanism retold with a named fictional app.
+When concrete syntax or intermediate state is central to understanding, provide
+an appropriately scoped request/response pair, code/pseudocode, configuration,
+state trace, or worked calculation instead of leaving it entirely abstract.
+Select the form using the calibration reference; examples may sit beside mechanisms
+as well as in this dedicated section. No code or example quota applies per branch.
+
+For protocol/API examples, show the representative exchanges needed to resolve
+the anchor and selected important-type cases: relevant request parameters, headers,
+and bodies, followed by the applicable response status, headers/redirect, and body.
+Explain consequential fields, checks, and resulting state beside the exchange.
+Parameter lists plus a narrated "returns a token/result" do not demonstrate an
+exchange's outcome. Show the concrete output where it matters; do not invent a
+body for a bodyless response. Add scoped code/pseudocode, configuration, or a state
+trace when exchanges alone leave consequential behavior unexplained. Develop these
+representative examples in the first full lesson, without waiting for a follow-up
+request for bodies or code. Keep depth proportional to the requested scope.
+
 Code, configuration, request/response pairs, and pseudocode support the explanation;
 explain consequential lines, state changes, and expected behavior. Label fragments,
 omissions, hypothetical data, and untested code honestly. Do not call a fragment
@@ -190,10 +231,39 @@ a runnable application. Retain necessary cleanup, permission boundaries, failure
 handling, and security even in simplified examples. Avoid unrelated scaffolding.
 A scientific example may be a calculation, observation, or thought experiment;
 check units and plausible results.
+Keep example identities, fields, values, units, and architecture consistent across
+steps. Declare illustrative endpoints and payloads. Verify derived values when
+claiming an exact computation; otherwise label the representation schematic.
+Place explanation beside consequential fields/lines rather than dumping syntax.
 
 General mechanisms belong in section 3; this section demonstrates their concrete
 consequences. Small illustrative steps may appear beside the mechanism, but do not
 remove the dedicated resolved worked-example section from a full lesson.
+
+For a topic with materially different principal types, use a developed anchor case
+and additional resolved examples for important types it cannot represent. Select
+types whose actors/authority, interaction, assumptions, or practical choice differ;
+a list of their use cases is not demonstrated coverage. Peripheral variants can
+use smaller illustrations. Choose depth and number by explanatory need, without
+equal treatment or a fixed quota; narrow requests still use their compact forms.
+
+Connect examples when helpful: continue an anchor through its lifecycle, use a
+shared setting with distinct architectural branches, or change a consequential
+condition and trace the different result. Each example/stage must add a mechanism,
+relationship, or consequence. Carry established identities, inputs, state, and
+results forward; mark changed assumptions. Do not present alternative architectures
+as successive stages of one flow. Explain briefly what changes and what remains
+shared. Read "Selecting and connecting worked examples" in the calibration
+reference when constructing a multi-type or interconnected example set.
+
+Before sending, check the example set for principal-type coverage, distinct purpose,
+concrete intermediate behavior, completed outcomes, and cross-example consistency.
+Check that consequential outputs are shown and interpreted, rather than merely
+announced, and important-type cases demonstrate their distinctive operations.
+For protocols/APIs, review the relevant request/response content and associated
+checks/state; repair parameter-only sketches that leave the outcome abstract.
+Repair cases that merely rename or repeat the mechanism. Resolve a changed-condition
+case rather than just labeling it a failure; do not invent unsupported failure rules.
 
 ### 5. ⚖️ Why this approach—and when to use it
 
@@ -241,6 +311,30 @@ causal paragraphs, whitespace, and selective bold emphasis. Number major section
 according to the selected template; number steps when order matters. Use subsections
 for meaningful branches, not a heading for every paragraph. Tables must have parallel
 row/column meanings; move lengthy causal explanations into nearby prose.
+
+### Tables, emphasis, and callouts
+
+Give each table a clear role: orientation, comparison, contract/reference, trace,
+decision, or misconception correction. Introduce what it organizes, separate
+independent classification axes, and retain conditions/exceptions. Follow
+consequential tables with the causal interpretation needed to use them; a table
+is not a replacement for the mechanism. Avoid long paragraph-sized cells.
+
+Use selective bold for central distinctions, outcome-changing conditions,
+consequential results, and correctness boundaries. If almost every sentence or
+term is emphasized, restore a usable hierarchy.
+
+Use occasional blockquotes for an original mental model or decisive boundary when
+they help navigation. Explain the statement nearby and avoid duplicating a full
+paragraph. Original framing must not appear to be an attributed source quotation.
+Actual quotations require faithful wording, attribution, links, and reuse limits.
+Do not add blockquotes or callouts to meet a count.
+
+Descriptive local labels such as "Why this step matters" or "What to notice" can
+expose a relationship; do not repeat a label mechanically for trivial steps.
+Horizontal separators may distinguish major units in a long article; avoid
+fragmenting every subsection. Lists organize parallel facts or ordered behavior;
+connected prose develops causation. User formatting constraints remain decisive.
 
 Use at most one restrained emoji per major heading: definition/goal 🎯, overview 🧭,
 mechanism ⚙️, example/trace 🔎, comparison/decision ⚖️, prerequisites 🧰,
@@ -308,33 +402,45 @@ multimedia/classroom findings to conversational Markdown requires qualification.
 Source-faithful synthesis must preserve relevant caveats, not every unrelated detail
 of each article. Observe quotation and reuse limits.
 
-## Final review: structure AND substance
+## Final review: whole-response consistency and development
 
 Silently check both, and repair failures before sending:
 
-1. Routing and structure: does the selected form fit the request and context?
-   Full broad lessons have all eight major sections in order; explicit overrides
-   are honored. Comparisons/tutorials follow their own reference contracts.
-2. Scope: are principal branches mapped before a representative deep dive? Has a
-   favorite example silently replaced the requested topic?
-3. Reasoning: can the reader trace the main mechanisms, why results follow, and a
-   condition changing the conclusion? Labels and table entries alone do not suffice.
-4. Examples: are starting conditions, consequential intermediate steps, and outcomes
-   resolved? Are claims about execution/runnability accurate?
-5. Alternatives/boundaries: are contrasts comparable, choices conditional, and
-   uncertainties distinguished from established causes?
-6. Fidelity: do actual source passages support claims at the stated scope? Are
-   consequential limitations, source content, and version details preserved?
-7. Visual correctness: audit arrows, identity/ownership, payloads, directions, and
-   boundaries. Check prose/table/diagram agreement. In state changes, audit
-   effect order, completion markers, intermediate failure, and retries; in science,
-   audit signs, units, assumptions, and system boundaries.
-   If the final answer contains a diagram, plot, or explanatory image, verify that visual-guidance.md was
-   actually read; planning a prose-only answer earlier is not an exception.
-8. Navigation and scope: are headings, cues, and tables usable? Remove empty
-   structure and redundant wording by adding necessary substance or tightening
-   expression, not by dropping required broad-lesson stages. No learner assessment.
+1. Routing and section functions: fit the request and honor explicit overrides.
+   Broad lessons preserve all eight sections. Test their functions, not only names:
+   motivating problem; branch relationships; developed mechanism; resolved case;
+   reasoned applicability; failure/correction; synthesis; supporting sources.
+   Apply the corresponding functions for other goals. Repair a choice example
+   substituted for an operational trace or category definitions substituted for
+   failure analysis when that function is needed. Do not invent failures or content.
+2. Topic development: map principal branches before a deep dive, develop essential
+   branches, bridge missing dependencies, and connect sections coherently. Detect
+   a favorite scenario replacing scope or extra categories crowding out core depth.
+3. Mechanisms: can the reader reconstruct consequential operations and why they
+   produce results? Check appropriate domain detail and outcome-changing conditions;
+   heading presence, step counts, and table rows do not establish depth.
+4. Concrete examples: verify the completion contract and the suitability of syntax,
+   traces, or calculations. Check intermediate values and resolved outcomes; do not
+   count a renamed abstract sequence as a developed example. Label execution status.
+5. Visual selection and accuracy: reconsider a consequential relationship left hard
+   to reconstruct in prose. Add/improve a useful representation without a quota.
+   Audit arrows, identity/ownership, payloads, directions, boundaries, and readability.
+   If a diagram, plot, or explanatory image is present, confirm visual-guidance.md
+   was actually read and follow its delivery review; do not claim unseen rendering.
+6. Navigation: check useful headings, parallel/readable tables, selective bold,
+   purposeful blockquotes, and consistent restrained emoji. Distinguish original
+   callouts from attributed quotations. Keep causal interpretation beside syntax
+   and visuals; avoid clutter, dense cells, and duplicated callouts.
+7. Cross-section fidelity: compare terminology, actor/endpoint ownership, values,
+   units, assumptions, obligations, and exceptions across prose, tables, code,
+   diagrams, examples, and takeaway. Trace consequential claims to supporting
+   passages. Check state-change order/failure/retry and mathematical consistency.
+   Recommendations must follow the developed mechanism and evidence; keep unknown
+   causes conditional and disclose consequential access limits.
+8. Whole response: is it a complete explanation for this scope rather than a
+   polished summary? Preserve useful mechanisms and representations when revising;
+   repair detected gaps before sending. Remove redundant wording without deleting
+   required functions. Honor no-assessment and user scope/formatting constraints.
 
 These are output-quality checks, not proof of learning or guaranteed compliance.
 Do not append a compliance report to an ordinary lesson.
-

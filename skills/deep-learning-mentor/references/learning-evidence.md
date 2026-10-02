@@ -334,6 +334,41 @@ Check: a full lesson has both meaningful stages and substantive coverage; a narr
 follow-up is not expanded into an unsolicited survey. Locations: SKILL.md routing;
 explanation-formats.md. Stable organization does not establish retention.
 
+## Operational development and navigation: bounded applications
+
+The following refinements respond to observed output gaps, the evidence cards,
+and the user's navigation preference. They are not new empirical findings or
+claims that a particular Markdown layout produces learning gains. Earlier access
+records remain intact; this refinement does not imply a new full-paper review.
+
+| Basis | Operational refinement and location | Failure example | Countercondition/check |
+|---|---|---|---|
+| E1 examples; professional code-sample guidance | Use instantiated inputs, intermediate behavior, result and interpretation; SKILL.md section 4 and depth-calibration.md | Fictional app names attached to the same abstract sequence | A calculation, observation, or thought experiment may be the right example; do not force code. Can the reader follow the resolved case? |
+| E2 integration/redundancy; E4 contiguity | Let syntax/diagrams expose structure and nearby prose explain consequential reasoning; SKILL.md navigation | Copy a complete paragraph into a node, table, and caption | Preserve necessary fallback and labels. Does each representation contribute or enable access? |
+| E4 signaling; professional writing guidance; user preference | Use purpose-driven tables, selective bold, and occasional original blockquotes; SKILL.md navigation | Every sentence bolded, dense cells, uncredited apparent quotations | Exact formatting is our design choice. Check usable hierarchy, attribution, and causal interpretation; honor plain/brief requests. |
+| E5 comparison | Use corresponding dimensions and develop decisive relationships after the matrix; explanation-formats.md | "Simple" versus "powerful" with no shared assumptions | Complementary concepts need contribution, not an invented winner. Is the consequence explained? |
+| E7 illustrations | Consider difficult actor/routes/state relationships before deciding prose alone; SKILL.md planning and visual-guidance.md | Multi-actor exchange without visible mediation or intelligible routes | No diagram quota. A table/prose may be clearer; a useful visual must add an accurate relationship. |
+| E8 goal routing; observed shallow compliance | Review section functions and whole-response consistency; SKILL.md final review | Eight headings containing only summaries or flow choices | Keep compact forms for narrow requests. Repair missing functions rather than adding arbitrary words. |
+
+Relevant primary professional pages rechecked for this refinement:
+[Google tables](https://developers.google.com/style/tables),
+[code samples](https://developers.google.com/style/code-samples),
+[text formatting](https://developers.google.com/style/text-formatting), and
+[illustrations](https://developers.google.com/tech-writing/two/illustrations).
+These are practitioner guidance, not experiments validating our completion contract,
+blockquote policy, emoji scheme, domain table, or final-review procedure.
+Google's text-formatting page restricts bold to UI elements/run-in headings and
+prefers italics for emphasis. Our selective bold for conceptual distinctions is
+the user's navigation preference, a deliberate style adaptation rather than a
+claim that Google recommends that exact treatment. Its code-font and semantic
+formatting guidance remain useful; do not silently erase this difference.
+
+For future article extraction, use the maintenance protocol above to address a
+specific unresolved instruction decision. Add accessible supporting passages,
+qualifications, null/contrary results, and application limits when they change
+guidance. Do not expand a historical abstract-level summary into invented methods
+or assume longer summaries automatically improve generated explanations.
+
 ## Conflict resolutions and open evidence limits
 
 These resolve operational tensions. They do not assert that all research agrees.
@@ -382,3 +417,18 @@ A finite evaluation supports only its tested samples. It cannot promise all-mode
 equivalence, long-term learning, or zero contradictions in the literature. Measure
 instruction and loaded-reference tokens as a cost report; do not optimize that
 number by removing decision-critical guidance.
+
+When revising for depth/navigation, compare preserved strengths as well as repaired
+failures: early branch map, causal development, resolved concrete examples, useful
+diagrams, validation/lifecycle coverage within scope, and source qualifications.
+Do not treat added categories as compensation for missing internals. Include a
+held-out multi-actor/branching subject to evaluate visual selection, and review
+navigation, table interpretation, callout attribution, and intermediate-state
+consistency. Assess depth and factual correctness together: an accurate summary
+and a detailed but incorrect lesson each fail a different requirement.
+
+Keep comparison artifacts distinct from ground truth. A polished external-model
+answer can illustrate presentation/depth while containing wrong obligations,
+exceptions, or sample values. Independently verify facts before reusing its examples.
+Use repeated comparable prompts and model/settings records before claiming improved
+cross-model consistency; one forward test is evidence for that output only.
