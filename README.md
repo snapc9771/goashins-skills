@@ -58,6 +58,10 @@ Coverage checks help catch missing areas or distinct architectural choices hidde
 inside generic labels. Sub-Indexes stay beside their parent block and stop after
 one expansion pass.
 
+Shared prerequisites sit before their applications at the appropriate level of
+the index. Foundations are covered once and referenced by dependent topics;
+existing learning material can be linked instead of duplicated.
+
 ## 🔬 `deep-learning-mentor`
 
 For a broad lesson, the mentor uses a consistent eight-part flow:

@@ -65,13 +65,27 @@ Respect natural-language modifiers such as `for a junior admin` or `for architec
 
 Complete this planning silently before writing the visible answer. The response must begin with the requested output, never with planning notes, a brain dump, or a reasoning tag.
 
-1. **Gather:** Identify the granular named concepts needed for a useful, reasonably complete map of the requested scope. Check coverage against the user's goal and level.
+1. **Gather:** Identify the granular application topics and the substantial underlying concepts, frameworks, protocols, platforms, or algorithms needed to understand them. Include applicable foundations in the initial concept inventory before clustering, numbering, or formatting. Check coverage against the user's goal and level.
 2. **Audit coverage:** For a broad system or platform, check its major capabilities and trust or interaction boundaries against authoritative sources and the user's goal. Look for independently documented choices hidden inside a single generic item, and for major areas missing entirely. For example, a platform's identity architecture may warrant separate coverage of user sign-in, federation, API authorization, and outbound credentials rather than one "authentication" checkbox. Apply this only where those distinctions matter to the requested scope.
-3. **Cluster bottom-up:** Group details into sub-categories, categories, and domains where those distinctions are meaningful. Preserve pedagogical sequence and avoid overlap.
+3. **Cluster bottom-up:** Organize the identified foundations and application topics using the shared-foundations rule below, then group details into sub-categories, categories, and domains where those distinctions are meaningful. Preserve pedagogical sequence and avoid overlap.
 4. **Apply the Decision Boundary:** Evaluate each substantive sub-category for a Sub-Index using the rule below. Mark only those that qualify.
 5. **Elaborate qualifying roots:** For each qualifying sub-category, organize a focused second pass: the existing sub-category root → Sub-Index groups → Sub-Index items → terminal granular details. Do not create a third pass.
 6. **Plan local placement:** Associate each Sub-Index with its parent root block so it can appear immediately after that block's Master Index portion.
 7. **Choose the visible entry level:** Apply adaptive depth compression only after the conceptual map is sound. Omit redundant outer wrappers; do not remove concepts, recategorize them to satisfy a numeric threshold, or change which Sub-Indexes qualify.
+
+---
+
+## Shared Conceptual Foundations (All Modes)
+
+Before organizing application-specific topics, identify underlying concepts, frameworks, protocols, platforms, or algorithms needed to understand them.
+
+- When a prerequisite requires substantial independent study, place it at the lowest hierarchy level that owns its scope. Use a foundation group within a branch when its applications belong there; use a broader numbered topic when several sibling branches depend on it. Integrate foundations into the normal index hierarchy before their dependent applications, rather than inserting detached headings. Keep them within the requested scope and use the existing Decision Boundary; do not introduce another sub-index pass.
+- Keep foundation grouping labels uncheckable. Express study tasks as focused terminal concepts, splitting independently learnable topics while retaining coherent comparisons. Determine the final numbering only after foundations and applications have been organized.
+- Explain shared foundations once at the closest common roadmap level, then reference them from dependent topics. Keep foundation coverage about the underlying concept and application coverage about its context-specific use.
+- If suitable learning material already exists, link to it as a prerequisite instead of duplicating it. Keep brief prerequisites within their relevant topic rather than creating a separate foundation section.
+- Use the concept's actual name or an appropriate label; do not force every prerequisite into a generic "Foundations" heading.
+
+For example, OAuth foundations can precede Salesforce-specific authorization, graph fundamentals can precede graph algorithms, and public-key cryptography can precede certificates, TLS, and signed assertions. Include only the prerequisite depth the applications need.
 
 ---
 
@@ -268,6 +282,8 @@ Apply this to the conceptual Sub-Category even when its visible address begins a
 
 After drafting the full roadmap, compare the visible index with the user's goal, calibrated level, and the concept inventory from pre-flight. Look for major areas that are absent, compressed into a vague leaf, or represented only as an incidental detail under another area. Reassess whether any such area contains independently decidable concepts that qualify for a local Sub-Index. Repair the content and hierarchy before polishing the display; add only distinctions relevant to the requested scope.
 
-## Final Readability Check
+Verify that substantial prerequisites are represented or linked, their placement supports the learning sequence, and their terminal tasks are actionable. Do not add foundation sections where brief contextual explanation is sufficient.
+
+
 
 Before sending, inspect the visible response as an index: Detailed output begins with the Epitome; Index-Only begins with the first index root. The tracking choice changes only terminal detail presentation. Use Roman Domain addresses rather than `DOMAIN 1` labels, and show no internal plan. Each Sub-Index sits under its root, each pointer matches its Sub-Index address, and reference tags appear as inline code. Lower-Roman `i.` items appear between `a.` groups and terminal details. Checkboxes appear only on leaves when Checklist is selected. If the rendering looks like a wall of text, add spacing or a simple root divider without adding explanations or changing the concept map.
