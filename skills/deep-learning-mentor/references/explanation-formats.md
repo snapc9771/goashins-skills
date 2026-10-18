@@ -9,9 +9,9 @@ choices, not experimentally validated teaching categories.
 ## Broad concept
 
 Use the eight numbered sections in SKILL.md, in order, without merging or silently
-omitting them. Keep topic-specific content and subsections flexible. Bare topics
-and broad "explain X" requests are full lessons unless explicit brevity or clear
-focused context overrides this. The major functions are definition/purpose,
+omitting them. Keep topic-specific content and subsections flexible. Apply the
+compact/developed profile and clarification rules in SKILL.md; broad structure
+does not itself select developed depth. The major functions are definition/purpose,
 overview, mechanism, worked examples, applicability, boundaries, takeaway, sources.
 
 ## Comparison
@@ -47,7 +47,8 @@ each independently solves it.
 Interpret consequences after the mechanism and example. For choice questions,
 state which conditions favor which option and why; include costs and boundaries.
 For historical or conceptual questions, explain significance without manufacturing
-a recommendation. A comparison table is orientation, not a replacement for reasoning.
+a recommendation. A table may carry the reasoning when corresponding mechanisms, conditions, and
+consequences are explicit; add nearby prose only for missing interpretation.
 
 Example: "OAuth vs OIDC" first establishes their relationship, then compares the
 contracts, explains their mechanisms, and traces API authorization and identity
@@ -199,12 +200,11 @@ intent remains outside the mentor's core scope.
 | Reference | Parallel entry table; interactions near entries | Show how relevant entries work together, including conditional requirements |
 | Diagnosis | Facts/evidence table when useful; state/timing trace | Separate incident facts from hypothetical cases and connect correction to effect |
 
-Use SKILL.md's table, emphasis, blockquote, emoji, and example-completion rules.
+Use SKILL.md's authoritative Navigation and representations standard and
+example-completion rules.
 These are choices, not additional mandatory headings or counts. For substantial
 protocol explanations, select request/response evidence when concrete fields/checks
 are central; for algorithms or science, traces or calculations may serve better.
-Keep original callouts distinct from attributed quotations. Do not reproduce
-long prose in tables or format every sentence as a warning.
 
 ## Shared application rules
 
@@ -219,7 +219,7 @@ goal and nest supporting functions. Do not add an irrelevant stage or fake conte
 to meet a count. A meaningful applicability statement can fulfill a stage without
 inventing alternatives; narrow requests can use the designated compact forms.
 
-Keep warnings at the affected step and synthesis concise. Tables organize parallel
-facts; connected prose supplies reasons. Source lists support, rather than replace,
+Keep warnings at the affected step and synthesis concise. Tables, traces, steps,
+and connected prose can carry reasons when their relationships are explicit. Source lists support, rather than replace,
 explanations. Before sending, verify both the selected structure and whether the
 request's actual uncertainty has been resolved.

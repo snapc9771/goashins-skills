@@ -3,7 +3,11 @@
 Read "Domain-sensitive depth" and the matching example for broad lessons and
 substantial comparisons unless already read in this conversation; use them also
 to repair shallow treatment. These calibrate explanatory depth, not subjects or
-fictional contracts to repeat. SKILL.md owns structure and final review.
+fictional contracts to repeat. SKILL.md owns structure, profile selection, and final
+review. The examples below demonstrate completion, not a minimum article length.
+Compact articles retain consequential inputs/checks/outcomes with smaller cases;
+developed articles expand reasoning and important-type cases. The paired editorial
+example is in article-presentation.md.
 
 ## Domain-sensitive depth
 
@@ -150,9 +154,10 @@ or consequential stage. Example count follows the topic and requested scope.
 | Continuation | Show a lifecycle or interaction with another concept | The next operation depends on state established in the anchor |
 | Contrast/failure case | Expose an outcome-changing condition | A supported condition changes a check, result, or boundary |
 
-A broad topic may require multiple examples because its important types cannot
-be represented by one mechanism. Develop the important distinctions; use smaller
-illustrations for peripheral types. Do not expand every minor subtype equally or
+A broad topic may require additional demonstrations because important types cannot
+be represented by one mechanism. Apply SKILL.md’s profile rule: compact treatment
+uses small resolved demonstrations; developed treatment expands important-type
+cases. Explain the important distinctions; use smaller illustrations for peripheral types. Do not expand every minor subtype equally or
 restart prerequisites and the general mechanism in each case. A focused question
 may need only one small resolved case.
 

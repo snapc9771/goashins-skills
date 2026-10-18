@@ -66,6 +66,11 @@ existing learning material can be linked instead of duplicated.
 
 For a broad lesson, the mentor uses a consistent eight-part flow:
 
+Choose **compact** for essential mechanisms and a resolved case, or **developed**
+for expanded reasoning, derivations, and additional cases. Both preserve the
+selected scope and the eight-section structure. The mentor clarifies material
+choices when context does not resolve them.
+
 1. 🎯 What it is, intuition, and purpose
 2. 🧭 Big picture
 3. ⚙️ How it works
@@ -157,10 +162,11 @@ skills/
 └── deep-learning-mentor/
     ├── SKILL.md
     └── references/
+        ├── article-presentation.md
         ├── depth-calibration.md
+        ├── diagram-guidance.md
         ├── explanation-formats.md
-        ├── learning-evidence.md
-        └── visual-guidance.md
+        └── learning-evidence.md
 ```
 
 ## Maintenance

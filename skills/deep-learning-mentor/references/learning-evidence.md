@@ -242,7 +242,7 @@ prose for accessibility and render failure, without line-by-line duplication.
 
 Check: each representation has a purpose, unfamiliar dependencies are introduced,
 and simplification has not erased a boundary. Locations: SKILL.md depth/navigation;
-visual-guidance.md integration. This is a qualified adaptation to chat, not a
+diagram-guidance.md integration. This is a qualified adaptation to chat, not a
 universal rule that more text or fewer details improves learning.
 
 ### E3. Segmentation
@@ -258,7 +258,7 @@ Do not convert segmentation into very short disconnected paragraphs, arbitrary
 node limits, or separate messages requiring the user to unlock the next segment.
 
 Check: sections remain connected and the requested explanation is complete.
-Locations: SKILL.md routing/navigation; visual-guidance.md overview/detail.
+Locations: SKILL.md routing/navigation; diagram-guidance.md overview/detail.
 
 ### E4. Signaling and contiguity
 
@@ -271,7 +271,7 @@ interpretation so readers can match information. Highlight the deciding relation
 not every object. Maintain useful prose when visuals fail.
 
 Check: a reader can identify the referenced element without resolving inconsistent
-names or searching distant text. Locations: SKILL.md navigation; visual-guidance.md
+names or searching distant text. Locations: SKILL.md navigation; diagram-guidance.md
 labels/integration. Emoji and exact heading counts remain preferences, not validated
 interventions. No new moderator claim is inferred from inaccessible methods.
 
@@ -287,7 +287,9 @@ the same problem; do not leave a table to explain itself. This skill supplies th
 comparison and reasoning; it does not claim equivalence to the learners' activity
 or add an assignment.
 
-Check: the decisive relationship and changing condition are explained in prose.
+Check: the decisive relationship and changing condition are explicitly explained
+in the table or nearby prose. This representation choice is an editorial adaptation,
+not a finding that a static table reproduces the studied learner activity.
 Locations: explanation-formats.md comparison; SKILL.md section 5.
 
 ### E6. Misconceptions and relevant detail
@@ -318,7 +320,7 @@ adopt its illustrative numerical rules of thumb as hard limits.
 
 Check: the visual teaches a relationship accurately and its interpretation is
 nearby. When preview is unavailable, do not claim render inspection.
-Location: visual-guidance.md.
+Location: diagram-guidance.md.
 
 ### E8. Goal-based documentation and the user's structure
 
@@ -347,7 +349,7 @@ records remain intact; this refinement does not imply a new full-paper review.
 | E2 integration/redundancy; E4 contiguity | Let syntax/diagrams expose structure and nearby prose explain consequential reasoning; SKILL.md navigation | Copy a complete paragraph into a node, table, and caption | Preserve necessary fallback and labels. Does each representation contribute or enable access? |
 | E4 signaling; professional writing guidance; user preference | Use purpose-driven tables, selective bold, and occasional original blockquotes; SKILL.md navigation | Every sentence bolded, dense cells, uncredited apparent quotations | Exact formatting is our design choice. Check usable hierarchy, attribution, and causal interpretation; honor plain/brief requests. |
 | E5 comparison | Use corresponding dimensions and develop decisive relationships after the matrix; explanation-formats.md | "Simple" versus "powerful" with no shared assumptions | Complementary concepts need contribution, not an invented winner. Is the consequence explained? |
-| E7 illustrations | Consider difficult actor/routes/state relationships before deciding prose alone; SKILL.md planning and visual-guidance.md | Multi-actor exchange without visible mediation or intelligible routes | No diagram quota. A table/prose may be clearer; a useful visual must add an accurate relationship. |
+| E7 illustrations | Consider difficult actor/routes/state relationships before deciding prose alone; SKILL.md planning and diagram-guidance.md | Multi-actor exchange without visible mediation or intelligible routes | No diagram quota. A table/prose may be clearer; a useful visual must add an accurate relationship. |
 | E8 goal routing; observed shallow compliance | Review section functions and whole-response consistency; SKILL.md final review | Eight headings containing only summaries or flow choices | Keep compact forms for narrow requests. Repair missing functions rather than adding arbitrary words. |
 
 Relevant primary professional pages rechecked for this refinement:
@@ -368,6 +370,38 @@ specific unresolved instruction decision. Add accessible supporting passages,
 qualifications, null/contrary results, and application limits when they change
 guidance. Do not expand a historical abstract-level summary into invented methods
 or assume longer summaries automatically improve generated explanations.
+
+### Navigation and readability style: user and editorial choices
+
+The semantic hierarchy, optional decimal/Roman/lowercase-letter subdivisions,
+parent-and-concept cross-references, contents only on explicit request, callout
+names, and outline/highlight review are this user's editorial navigation contract.
+The five available content levels do not require five-level depth: independently
+revisitable topics determine subdivisions, and short local labels may remain
+unnumbered. These choices are not a scientifically established universal layout
+or evidence of learning. Compact and developed substantial articles share the
+standard; detail remains independently selected, and focused/explicit-format
+overrides remain. SKILL.md owns the operational standard; article-presentation.md
+supplies an illustrative outline and the broader toolkit.
+
+Prior research for this update identified the following professional guidance;
+this maintenance record does not claim a fresh page or passage verification:
+
+| Guidance and provenance | Bounded application and difference |
+|---|---|
+| [W3C WAI, Headings](https://www.w3.org/WAI/tutorials/page-structure/headings/) | Logical semantic hierarchy supports navigation; the particular eight functions and optional subdivision labels are user choices. |
+| [NN/g, Layer-Cake Pattern of Scanning](https://www.nngroup.com/articles/layer-cake-pattern-scanning/) | Descriptive, front-loaded headings inform scanning design. Practitioner web-reading guidance does not establish retention from this lesson format. |
+| [Google, Headings](https://developers.google.com/style/headings) | Its style discourages numbered headings. This user's numbered majors and optional decimal/Roman/letter subdivisions deliberately differ; do not attribute those choices to Google. |
+| [Google, Text formatting](https://developers.google.com/style/text-formatting) | The selective conceptual bold described above remains a deliberate adaptation, not Google's general emphasis recommendation. |
+| [Google, Notices](https://developers.google.com/style/notices) | Callout restraint and severity inform the design. Contract, Result, Boundary, Pitfall, and Architectural implication are our editorial labels; Warning is reserved for consequential hazards. |
+| [Google, Tables](https://developers.google.com/style/tables) | Descriptive introductions and headers inform understandable tables; stable IDs only when cross-references need them are our practical choice. |
+
+Descriptive collapsible summaries, visible essential conditions, representation
+selection, and coherent paragraphs are accessibility/readability design decisions.
+Their operational check is whether a reader can locate topics and consequential
+boundaries without losing the causal explanation, not counts of headings, bold
+spans, callouts, sentences, or features. Preserve the historical evidence records
+and access qualifications above; this update adds no new empirical claims.
 
 ## Conflict resolutions and open evidence limits
 
@@ -432,3 +466,16 @@ answer can illustrate presentation/depth while containing wrong obligations,
 exceptions, or sample values. Independently verify facts before reusing its examples.
 Use repeated comparable prompts and model/settings records before claiming improved
 cross-model consistency; one forward test is evidence for that output only.
+
+
+
+## Editorial update: purpose, depth, and Markdown presentation
+
+Compact/developed profiles, clarification before material routing choices, the
+shared eight-section broad backbone, and purposeful Markdown extensions are user
+preferences and editorial decisions. Their operational rules live in SKILL.md and
+article-presentation.md. They do not establish an optimal length, feature count, or
+retention effect. Existing evidence cards retain their study-specific caveats;
+“prose” in design examples is not a requirement to repeat reasoning already clear
+in a table, trace, or ordered explanation. Preserve explicit causal relationships
+and accessible meaning across representations.

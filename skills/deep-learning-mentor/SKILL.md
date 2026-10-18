@@ -1,7 +1,7 @@
 ---
 name: deep-learning-mentor
 description: >-
-  Explain technology, engineering, mathematics, and science through developed,
+  Explain technology, engineering, mathematics, and science through compact or developed,
   concept-first lessons, comparisons, guided explanations, and focused answers.
   Route by the reader's goal; use a consistent eight-section structure for broad
   lessons, causal mechanisms, resolved examples, and faithful sources. Not for
@@ -35,15 +35,50 @@ principles; it does not guarantee retention, competence, or identical model outp
 
 ## Route the request before drafting
 
-Choose the primary goal from the actual request and conversational context.
-Infer domain-specific prior knowledge; bridge missing prerequisites without
-restarting established lessons. Ask only when missing information materially
-changes the explanation and cannot reasonably be inferred.
+Resolve purpose, depth, and scope independently from the request and established
+conversation preferences. Ask before drafting when an unresolved choice would
+materially change the article; ask only missing decisions, bundle related choices,
+and describe their practical difference. Wait for the answer before dependent
+drafting. Continue independent source inspection if useful. Do not ask again for
+established preferences or routine editorial choices.
 
-A bare topic such as "OAuth" or a broad "explain X" request invokes a FULL BROAD
-LESSON unless the reader explicitly requests brevity or context clearly makes it
-a focused continuation. Short prompt length is not a request for a short answer.
-Do not silently replace a full lesson with a compact introduction to one branch.
+For supplied topic lists or roadmap selections, assess whether the topics form one
+coherent learning unit before committing to an article structure. Consider the
+reader's goal, conceptual relationships, prerequisites, standalone usefulness, and
+requested treatment; length or topic count alone does not justify splitting.
+Preserve every selected topic and meaningful distinction; consolidate overlap and
+link shared prerequisites. If one article fits, proceed. When separation would
+materially improve coherence, propose article groups with included topics, reasons,
+and prerequisite order where useful. Resolve the grouping before dependent drafting
+unless a series or grouping discretion is already authorized. Respect an explicit
+combined-article request; clarify only material conflicts with other requirements.
+Article grouping does not authorize roadmap restructuring or progress changes.
+
+Choose purpose first using the table below. “Teach me” alone selects neither a
+tutorial nor developed depth. “How to build/do” indicates a tutorial; a concept
+article explains the subject through the broad backbone. A bare topic without
+usable context may need clarification. Infer prior knowledge from demonstrated
+context, not a job title alone; bridge missing prerequisites without restarting
+established lessons.
+
+Choose depth second. “Write an article,” “quick,” “concise,” or “revision” favors
+compact; “deep dive,” “detailed reasoning,” or “derive” favors developed. Explicit
+choices and context take precedence. “Full,” “whole,” and “complete” describe scope,
+not automatically depth; short prompt length does not determine either. If depth
+remains materially ambiguous, ask “Compact, with essential mechanisms and a resolved
+case, or developed, with expanded reasoning and additional cases?” If purpose is
+unclear, ask whether the reader wants a concept article or a step-by-step tutorial
+(or the relevant alternatives). Do not make the reader design the lesson.
+
+| Depth profile | Treatment within the selected purpose |
+|---|---|
+| Compact | Cover all selected topics and consequential distinctions with concise mechanisms, preferably one coherent resolved case for a broad article, and small demonstrations where different behavior remains unexplained. Favor scannable tables, steps, and focused prose. |
+| Developed | Preserve the same scope; expand causal steps, prerequisite bridges, derivations, and additional resolved cases for materially different behavior. Keep navigation and wording economical. |
+
+Both profiles preserve accuracy, qualifications, sources, and example completion.
+Both broad profiles use all eight major sections; their lengths may differ greatly.
+For other purposes, use the required functions below and scale treatment to the
+profile; a focused answer does not acquire an eight-section survey.
 
 | Primary goal | Required backbone | Permitted flexibility |
 |---|---|---|
@@ -71,13 +106,16 @@ A narrow question may still need deep reasoning without a survey of the topic.
   "Shared application rules" in [explanation-formats.md](references/explanation-formats.md)
   before drafting. The full broad template and focused logic are self-contained here.
 - Before writing any Mermaid block, diagram image, or other explanatory visual: read
-  [visual-guidance.md](references/visual-guidance.md) before constructing it.
+  [diagram-guidance.md](references/diagram-guidance.md) before constructing it.
   Plain comparison/reference tables follow the navigation rules below and do not
   alone trigger this read. Diagrams, plots, and explanatory images do.
 - For broad lessons or substantial comparisons: read "Domain-sensitive depth" and
   the relevant worked-example calibration in
   [depth-calibration.md](references/depth-calibration.md) unless already read in this
   conversation. Apply the standard, not the example's subject or fictional contract.
+- For article presentation choices or calibrating compact versus developed output:
+  read [article-presentation.md](references/article-presentation.md). Its paired examples
+  illustrate editorial treatment, not subject coverage to copy into other articles.
 - For discussing or maintaining pedagogy: read the relevant evidence cards and
   conflict resolutions in [learning-evidence.md](references/learning-evidence.md).
   Read its maintenance protocol when adding/changing research-derived rules.
@@ -96,14 +134,11 @@ conclusion within the requested scope. Develop essential and decision-critical
 branches; briefly locate specialized extensions and historical variants. Do not
 catalog every adjacent feature or omit major branches to stay concise.
 
-Maintain a brief private coverage inventory: each principal branch, where it is
-mapped, and where its mechanism and boundary are developed. Before sending, check
-every mapped principal branch against its actual explanation. A row naming a flow
-or policy is not developed coverage. If a branch is intentionally peripheral,
-locate it briefly and make that scope clear rather than silently losing it.
-Distinguish privately between merely mentioned, mapped, and developed branches;
-check that required principal branches reach developed treatment. Develop the
-important branches before adding adjacent categories that dilute their explanation.
+Maintain a brief private inventory of principal branches, their mechanisms, and
+boundaries. Judge coverage across the whole article. A name or “best for” row is
+insufficient, but a clear table or trace can carry the explanation. Combine shared
+foundations and separate consequential differences; do not rebuild a miniature
+lesson for every branch. Mark intentionally peripheral scope rather than losing it.
 
 For evolving technical standards, check whether the foundational specification
 omits widely used current extensions or later guidance. Build the principal-branch
@@ -122,19 +157,20 @@ A definition followed by "best for" is insufficient. A sequence alone may show
 order without explaining causation. Trace a representative input or case far
 enough to reveal the outcome and its conditions. Explain differences with
 comparable causal depth, not equal word counts. Broad topics require a branch map
-and developed mechanisms; eight shallow headings do not satisfy the contract.
+and explained mechanisms at the chosen depth; eight shallow headings do not satisfy
+the contract.
 
 Use the running example to illuminate the scope, not to redefine it. For extremely
 broad topics, state a coherent foundational scope, cover its principal branches,
-and locate deeper subfields without implying exhaustive treatment. Do not ask the
-reader to design the lesson or make essential explanation contingent on another turn.
+and locate deeper subfields without implying exhaustive treatment. Clarify materially ambiguous scope before drafting; once agreed, complete its
+essential explanation in the article rather than deferring it to follow-up turns.
 
 Before drafting a substantial lesson, consider which relationships need a visual:
 multiple actors/routes, consequential boundaries, branching, state transitions,
 hierarchies, or quantitative change. Include a suitable visual when it makes an
 important relationship materially easier to reconstruct. Do not default to prose
 merely to avoid the visual reference, or add a diagram solely to fill a quota.
-Read visual-guidance.md when a diagram, plot, or explanatory image is selected.
+Read diagram-guidance.md when a diagram, plot, or explanatory image is selected.
 
 ## Full broad lesson: eight required sections
 
@@ -170,6 +206,9 @@ the relevant subsection without giving every variant identical depth.
 ### 3. ⚙️ How it works
 
 Develop conditions -> mechanism -> changes -> outcome in connected reasoning.
+Logical continuity may use prose, steps, tables, or traces; it does not require
+paragraph-heavy narration. Give each mechanism one authoritative explanation;
+later sections apply or synthesize it, with brief reminders only where needed.
 Use subsections for principal branches. Explain why consequential operations are
 needed and what would change if a relevant assumption failed.
 For protocols/APIs, expose the initiating actor, relevant message fields, receiver's
@@ -240,12 +279,12 @@ General mechanisms belong in section 3; this section demonstrates their concrete
 consequences. Small illustrative steps may appear beside the mechanism, but do not
 remove the dedicated resolved worked-example section from a full lesson.
 
-For a topic with materially different principal types, use a developed anchor case
-and additional resolved examples for important types it cannot represent. Select
-types whose actors/authority, interaction, assumptions, or practical choice differ;
-a list of their use cases is not demonstrated coverage. Peripheral variants can
-use smaller illustrations. Choose depth and number by explanatory need, without
-equal treatment or a fixed quota; narrow requests still use their compact forms.
+Choose the example set by profile. Compact broad articles favor one coherent anchor
+and small resolved demonstrations for consequential behavior the anchor cannot
+show. Developed articles add resolved important-type cases when actors/authority,
+interaction, assumptions, or practical consequences differ materially. Neither
+profile needs equal treatment of variants or a fixed example count. Preserve the
+completion contract in every selected case; a use-case list is not a demonstration.
 
 Connect examples when helpful: continue an anchor through its lifecycle, use a
 shared setting with distinct architectural branches, or change a consequential
@@ -270,8 +309,9 @@ case rather than just labeling it a failure; do not invent unsupported failure r
 Explain consequential design choices, benefits, costs, and assumptions through
 mechanisms. Distinguish documented rationale from inference. When alternatives or
 types are material, compare them in a side-by-side table using consistent dimensions
-and the same problem; follow a choice-oriented table with conditional selection
-rules and reasons. Separate independent decisions into separate tables.
+and the same problem. Include conditional selection rules and reasons in the table
+or nearby prose; add prose only for reasoning the table does not communicate.
+Separate independent decisions into separate tables.
 
 Explain complementary relationships and historical significance without inventing
 a winner. Qualify "simpler," "faster," and "more scalable" with conditions and costs.
@@ -306,55 +346,79 @@ Focused and explicitly brief answers can use proportional inline citations.
 
 ## Navigation and representations
 
-For substantial lessons, use descriptive headings, semantic nesting, short connected
-causal paragraphs, whitespace, and selective bold emphasis. Number major sections
-according to the selected template; number steps when order matters. Use subsections
-for meaningful branches, not a heading for every paragraph. Tables must have parallel
-row/column meanings; move lengthy causal explanations into nearby prose.
+For substantial articles, use a semantic hierarchy under the selected format,
+with an H1 title. Number majors where that format requires it; the eight major
+sections remain required for broad lessons. Focused answers retain optional
+headings, and explicit brief/plain-text requests retain their overrides.
 
-### Tables, emphasis, and callouts
+When independently revisitable topics warrant subdivisions, use this hierarchy:
 
-Give each table a clear role: orientation, comparison, contract/reference, trace,
-decision, or misconception correction. Introduce what it organizes, separate
-independent classification axes, and retain conditions/exceptions. Follow
-consequential tables with the causal interpretation needed to use them; a table
-is not a replacement for the mechanism. Avoid long paragraph-sized cells.
+| Content level | Markdown heading | Label example |
+|---|---|---|
+| 1: major section | H2 | 3. How it works |
+| 2: principal subsection | H3 | 3.2 Collections |
+| 3: subordinate topic | H4 | iii. Maps |
+| 4: deeper topic | H5 | a. Key lookup |
+| 5: further detail | H6 | Collision handling (descriptive, unnumbered) |
 
-Use selective bold for central distinctions, outcome-changing conditions,
-consequential results, and correctness boundaries. If almost every sentence or
-term is emphasized, restore a usable hierarchy.
+Decimal subsections restart within each major section; lowercase Roman numerals
+restart within each decimal parent, and lowercase letters within each Roman
+parent. These are available levels, not a target depth: add only subdivisions
+that serve the content, never filler or artificial intermediate branches. Short
+local labels may remain descriptive unnumbered headings, bullets, or callouts.
+Do not skip semantic heading levels on descent or replace real headings with bold
+lines. Use Step 1, Step 2 for sequential procedures. Keep headings descriptive and
+concept-first; topic-specific major subtitles must preserve required functions.
 
-Use occasional blockquotes for an original mental model or decisive boundary when
-they help navigation. Explain the statement nearby and avoid duplicating a full
-paragraph. Original framing must not appear to be an attributed source quotation.
-Actual quotations require faithful wording, attribution, links, and reuse limits.
-Do not add blockquotes or callouts to meet a count.
+Cross-references include the parent and concept, for example “3.2(iii), Maps” or
+“3.2(iii)(a), Key lookup”; avoid ambiguous bare numerals or letters. Refer to
+unnumbered detail by its parent and descriptive heading, linking when useful.
+Omit a standalone Contents section by default; include one only when explicitly
+requested. When requested, nest linked major sections and principal subsections
+by hierarchy, adding deeper topics only when useful for navigation. Retain useful
+anchors and related-topic links without a contents list. Match links to actual
+headings and check anchors in the target viewer when available; never claim an
+unperformed link check. Give tables and examples descriptive labels; add stable
+identifiers when cross-references need them, not to satisfy a label quota.
 
-Descriptive local labels such as "Why this step matters" or "What to notice" can
-expose a relationship; do not repeat a label mechanically for trivial steps.
-Horizontal separators may distinguish major units in a long article; avoid
-fragmenting every subsection. Lists organize parallel facts or ordered behavior;
-connected prose develops causation. User formatting constraints remain decisive.
+Make decisive words, distinctions, results, or conditions selectively **bold**;
+whole bold paragraphs defeat the hierarchy. Use inline code for literals. Place
+brief, purpose-labelled callouts beside the relevant explanation: Contract, Result,
+Boundary, Pitfall, or Architectural implication. Reserve Warning for consequential
+hazards. Use supported alerts or labelled blockquotes with readable text fallbacks;
+do not repeat the same passage in a box and prose or interrupt every paragraph.
+Actual quotations require attribution, links, faithful wording, and reuse limits.
+
+Lead paragraphs with their main point where appropriate; preserve coherent causal
+groups and whitespace without sentence quotas or fragmented logic. Use tables for
+comparable facts/contracts, lists for parallel points, steps for order, and prose
+for causal reasoning; add only interpretation a representation leaves unexplained.
+Keep table cells readable and independent classification axes separate.
+
+Collapse only supplements under descriptive summaries such as “Additional failure
+example”; essential claims, mechanisms, conditions, warnings, and conclusions remain
+visible. Use standard Markdown or readable fallbacks when viewer support is unknown.
+Color and emoji supplement text meaning. The presentation reference supplies the
+fuller toolkit; select features by usefulness, not counts. Task lists serve requested
+procedures/tracking; never change roadmap progress without clear direction. Saving
+or editing files still requires authorization.
 
 Use at most one restrained emoji per major heading: definition/goal 🎯, overview 🧭,
 mechanism ⚙️, example/trace 🔎, comparison/decision ⚖️, prerequisites 🧰,
 procedure/correction 🛠️, boundaries ⚠️, synthesis 📌, sources 📚.
 Omit cues for short answers, formal deliverables, or explicit plain formatting.
-Words must remain meaningful without cues. Do not put emoji in ordinary prose or
-table cells. These are navigation preferences, not proven learning interventions.
+Keep headings meaningful without cues; avoid emoji in ordinary prose or table cells.
 
-Keep names consistent across representations. Put explanations beside relevant code,
-equations, and visuals. Choose a visual for the relationship it reveals; split
-overloaded views by explanatory question, preserve important boundaries, and describe
-what to notice. Prefer supported Mermaid for ordinary technical diagrams; use an
-appropriate image tool when an image is requested. Keep the explanation usable if
-rendering fails. Never rely solely on color, emoji, or rendering for essential meaning.
+Keep names consistent and explanations beside relevant syntax, equations, and
+visuals. Read diagram-guidance.md before constructing a diagram, plot, or explanatory
+image; choose the relationship to reveal, preserve boundaries, and explain what to
+notice. Keep essential meaning usable without rendering, color, or emoji.
 
-Every revisit must add a relationship, consequence, concrete application, or synthesis.
-Do not equate coherence with minimum length: remove irrelevant detail and redundant
-restatement while retaining necessary complexity. Avoid fixed word, example, diagram,
-or node quotas. The full broad lesson's eight sections are a structural requirement,
-not a claim about optimal content counts.
+Each revisit must add a relationship, changed condition, application, or synthesis.
+Carry established facts forward rather than restarting the explanation. Permit
+brief reminders and local warnings where needed. Remove filler and repeated setup
+while preserving unfamiliar reasoning. Avoid word, example, diagram, or node quotas.
+These navigation choices are editorial preferences, not retention guarantees.
 
 ## Source fidelity and conflicting evidence
 
@@ -402,45 +466,38 @@ multimedia/classroom findings to conversational Markdown requires qualification.
 Source-faithful synthesis must preserve relevant caveats, not every unrelated detail
 of each article. Observe quotation and reuse limits.
 
-## Final review: whole-response consistency and development
+## Final review: coverage, understanding, density, and presentation
 
-Silently check both, and repair failures before sending:
+Silently check these four dimensions and repair actual weaknesses before sending:
 
-1. Routing and section functions: fit the request and honor explicit overrides.
-   Broad lessons preserve all eight sections. Test their functions, not only names:
-   motivating problem; branch relationships; developed mechanism; resolved case;
-   reasoned applicability; failure/correction; synthesis; supporting sources.
-   Apply the corresponding functions for other goals. Repair a choice example
-   substituted for an operational trace or category definitions substituted for
-   failure analysis when that function is needed. Do not invent failures or content.
-2. Topic development: map principal branches before a deep dive, develop essential
-   branches, bridge missing dependencies, and connect sections coherently. Detect
-   a favorite scenario replacing scope or extra categories crowding out core depth.
-3. Mechanisms: can the reader reconstruct consequential operations and why they
-   produce results? Check appropriate domain detail and outcome-changing conditions;
-   heading presence, step counts, and table rows do not establish depth.
-4. Concrete examples: verify the completion contract and the suitability of syntax,
-   traces, or calculations. Check intermediate values and resolved outcomes; do not
-   count a renamed abstract sequence as a developed example. Label execution status.
-5. Visual selection and accuracy: reconsider a consequential relationship left hard
-   to reconstruct in prose. Add/improve a useful representation without a quota.
-   Audit arrows, identity/ownership, payloads, directions, boundaries, and readability.
-   If a diagram, plot, or explanatory image is present, confirm visual-guidance.md
-   was actually read and follow its delivery review; do not claim unseen rendering.
-6. Navigation: check useful headings, parallel/readable tables, selective bold,
-   purposeful blockquotes, and consistent restrained emoji. Distinguish original
-   callouts from attributed quotations. Keep causal interpretation beside syntax
-   and visuals; avoid clutter, dense cells, and duplicated callouts.
-7. Cross-section fidelity: compare terminology, actor/endpoint ownership, values,
-   units, assumptions, obligations, and exceptions across prose, tables, code,
-   diagrams, examples, and takeaway. Trace consequential claims to supporting
-   passages. Check state-change order/failure/retry and mathematical consistency.
-   Recommendations must follow the developed mechanism and evidence; keep unknown
-   causes conditional and disclose consequential access limits.
-8. Whole response: is it a complete explanation for this scope rather than a
-   polished summary? Preserve useful mechanisms and representations when revising;
-   repair detected gaps before sending. Remove redundant wording without deleting
-   required functions. Honor no-assessment and user scope/formatting constraints.
+1. **Coverage:** purpose, profile, and scope follow the request/context; material
+   ambiguities were resolved. Preserve the selected template's functions, including
+   all eight broad sections. Principal branches have mechanisms and boundaries;
+   shared foundations are consolidated without dropping meaningful distinctions.
+   No favorite scenario substitutes for scope or essential content is deferred.
+2. **Understanding and fidelity:** the reader can reconstruct consequential behavior
+   and its conditions. Examples show inputs, intermediate checks/state, completed
+   outputs, and interpretation, with accurate execution labels. Compare terminology,
+   ownership, values, units, versions, assumptions, obligations, and exceptions across
+   every representation. Check state-change order, failure/retry, and calculations.
+   Trace consequential claims to supporting passages; qualify uncertainty/access
+   limits locally. Recommendations follow evidence and mechanisms. Preserve source,
+   no-assessment, saving-authorization, and roadmap-progress boundaries.
+3. **Density:** every case and revisit adds meaning. Remove repeated mechanisms,
+   setup, row-by-row narration, decorative scaffolding, and unnecessary variants.
+   Retain prerequisite bridges and outcome-changing conditions at the selected depth.
+   A choice recommendation does not replace an operational example.
+4. **Presentation:** scan the outline and highlighted text: every selected topic is
+   locatable through descriptive headings. Check semantic levels, optional decimal/
+   Roman/letter subdivisions and their parent resets, useful link targets where
+   possible, and parent-and-concept cross-references. No depth or filler is forced;
+   standalone contents appear only when explicitly requested. Highlights expose
+   decisive distinctions rather than whole paragraphs; essential conditions and
+   boundaries remain visible. Check descriptive labels, callout purpose/attribution,
+   consistent names, and readable extension fallbacks. Judge usable navigation and
+   reasoning, not feature counts. For visuals, follow diagram-guidance.md's delivery
+   review: check arrows, payloads, ownership, boundaries, and readability; never
+   claim unseen rendering or link verification.
 
 These are output-quality checks, not proof of learning or guaranteed compliance.
 Do not append a compliance report to an ordinary lesson.

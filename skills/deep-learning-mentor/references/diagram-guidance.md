@@ -137,7 +137,6 @@ When rendering or preview is available, inspect readability, clipping, contrast,
 arrow crossings, and actual rendering. If unavailable, perform a source-level
 check and retain prose fallback; do not claim a rendered visual was inspected.
 
-For presentation overall, preserve semantic heading levels, meaningful numbering,
-parallel table columns, whitespace, and short connected causal paragraphs. Emoji
-are navigation preferences, not empirical learning guarantees. Do not use a fixed
-word, paragraph, node, or diagram quota as a substitute for this review.
+For article navigation and readability, follow SKILL.md's authoritative Navigation
+and representations standard. This reference owns diagram construction and delivery;
+word, paragraph, node, or diagram counts do not substitute for its review.
