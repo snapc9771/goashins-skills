@@ -235,3 +235,4 @@ Keep warnings at the affected step and synthesis concise. Tables, traces, steps,
 and connected prose can carry reasons when their relationships are explicit. Source lists support, rather than replace,
 explanations. Before sending, verify both the selected structure and whether the
 request's actual uncertainty has been resolved.
+

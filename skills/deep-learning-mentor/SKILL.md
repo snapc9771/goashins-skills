@@ -150,8 +150,9 @@ proportional citation rules. Consult the shared reference guidance in either lay
   the relevant worked-example calibration in
   [depth-calibration.md](references/depth-calibration.md) unless already read in this
   conversation. Apply the standard, not the example's subject or fictional contract.
-- For article presentation choices or calibrating compact versus developed output:
-  read [article-presentation.md](references/article-presentation.md). Its paired examples
+- Before drafting a substantial article in either layout or depth profile, read
+  [article-presentation.md](references/article-presentation.md) unless already read
+  in this conversation. Its paired examples
   illustrate editorial treatment, not subject coverage to copy into other articles.
   For Free Layout, read its shared representation toolkit and Free Layout guidance;
   numbered navigation and paired Structured examples are optional calibration.
@@ -391,6 +392,10 @@ Focused and explicitly brief answers can use proportional inline citations.
 ## Navigation and representations
 
 For substantial articles, use a semantic hierarchy under the selected layout.
+Apply the shared presentation defaults in both compact and developed responses.
+Free Layout changes organization, not the standard for visual hierarchy, emphasis,
+callouts, or readable examples. Scale these to the answer; short focused answers
+do not need an article's full presentation.
 Structured articles use an H1 title and number majors where their format requires
 it; the eight major sections remain required for Structured broad lessons.
 Free Layout uses descriptive headings where useful; title, numbering, and the
@@ -431,10 +436,19 @@ identifiers when cross-references need them, not to satisfy a label quota.
 
 Make decisive words, distinctions, results, or conditions selectively **bold**;
 whole bold paragraphs defeat the hierarchy. Use inline code for literals. Place
-brief, purpose-labelled callouts beside the relevant explanation: Contract, Result,
-Boundary, Pitfall, or Architectural implication. Reserve Warning for consequential
-hazards. Use supported alerts or labelled blockquotes with readable text fallbacks;
-do not repeat the same passage in a box and prose or interrupt every paragraph.
+brief, purpose-labelled callouts beside the relevant explanation: Key distinction,
+Contract, Result, Boundary, Pitfall, or Architectural implication. In substantial
+articles, select insights that anchor the mental model, prevent a consequential
+misreading, or explain the main conclusion of a worked example. Give those insights
+visible callouts; routine observations and intermediate results may remain in prose.
+For a selected callout, use a labelled Markdown blockquote by default, or a supported
+alert. A standalone bold label such as **Result:** is not a substitute for that
+format. Use ordinary labelled text only for a reader's formatting override or a
+viewer that cannot support it; when support is unknown, prefer standard Markdown.
+Reserve Warning for consequential hazards. Move the selected insight into the
+callout instead of repeating it in nearby prose. Keep the reasoning connected;
+do not box every result or interrupt every paragraph to satisfy a callout count.
+These callouts contain original explanatory text, not invented source quotations.
 Actual quotations require attribution, links, faithful wording, and reuse limits.
 
 Lead paragraphs with their main point where appropriate; preserve coherent causal
@@ -442,6 +456,20 @@ groups and whitespace without sentence quotas or fragmented logic. Use tables fo
 comparable facts/contracts, lists for parallel points, steps for order, and prose
 for causal reasoning; add only interpretation a representation leaves unexplained.
 Keep table cells readable and independent classification axes separate.
+
+Give a long worked example local navigation: descriptive step labels for a sequence,
+or subheadings for independently revisitable parts. Keep each consequential input,
+check, output, and interpretation together. When later operations depend on state
+retained, consumed, or replaced across steps, show who holds that state and what
+changes at the consequential operations. An annotated sequence, nearby step
+explanations, or a compact state table can satisfy this requirement. The reader
+should be able to follow the relevant state from one operation to the next without
+assembling scattered passages. A message sequence alone is sufficient only when
+it also makes the necessary ownership and state changes clear. Add a separate
+state view only when the existing presentation leaves that gap; do not duplicate
+an adequate trace or impose state tracking on examples where it is irrelevant.
+Distinguish the core mechanism from supporting variants through headings and brief
+orientation, preserving coverage while making the main explanatory path easy to follow.
 
 Collapse only supplements under descriptive summaries such as “Additional failure
 example”; essential claims, mechanisms, conditions, warnings, and conclusions remain
@@ -451,8 +479,17 @@ fuller toolkit; select features by usefulness, not counts. Task lists serve requ
 procedures/tracking; never change roadmap progress without clear direction. Saving
 or editing files still requires authorization.
 
-Use at most one restrained emoji per major heading when cues are useful; in Free
-Layout the stage-specific mapping is optional. Available cues: definition/goal 🎯, overview 🧭,
+Use one stable emoji cue per major heading by default in substantial articles.
+
+- **Structured Layout:** Retain the emoji specified by the selected template for
+  each major section. Use the purpose mapping below for other major headings with
+  a matching function. Do not substitute related symbols unless the reader requests
+  a different cue. Select a suitable cue only for a purpose not covered by either.
+- **Free Layout:** Choose cues for the actual meaning of the headings. The mapping
+  below is optional; it must not determine headings, section count, or organization.
+  Keep cue meanings consistent within the article.
+
+Mapping: definition/goal 🎯, overview 🧭,
 mechanism ⚙️, example/trace 🔎, comparison/decision ⚖️, prerequisites 🧰,
 procedure/correction 🛠️, boundaries ⚠️, synthesis 📌, sources 📚.
 Omit cues for short answers, formal deliverables, or explicit plain formatting.
@@ -546,7 +583,18 @@ Silently check these four dimensions and repair actual weaknesses before sending
    standalone contents appear only when explicitly requested. Highlights expose
    decisive distinctions rather than whole paragraphs; essential conditions and
    boundaries remain visible. Check descriptive labels, callout purpose/attribution,
-   consistent names, and readable extension fallbacks. Judge usable navigation and
+   and readable extension fallbacks. Check Structured cues against the selected
+   template/mapping; judge Free cues by heading meaning and internal consistency.
+   Honor the stated formatting exceptions. Check that selected callouts use
+   blockquotes or supported alerts rather than standalone bold labels, unless a
+   formatting override or viewer limitation applies. Can a reader scanning headings
+   and callouts locate the central
+   distinction, consequential boundaries, and worked result? Can they re-enter a
+   long example at a meaningful step? Where later operations depend on changing
+   state, can they follow its owner and transitions through the existing explanation?
+   Repair gaps locally using the applicable navigation or representation; avoid
+   unnecessary sections, repeated explanations, or duplication of an adequate trace.
+   Check consistent names. Judge usable navigation and
    reasoning, not feature counts. For visuals, follow diagram-guidance.md's delivery
    review: check arrows, payloads, ownership, boundaries, and readability; never
    claim unseen rendering or link verification.

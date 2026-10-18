@@ -15,7 +15,7 @@ These are editorial examples, not evidence that a layout guarantees retention.
 | Group or order | Bullets for parallel points; numbered steps for sequence; nested lists only for real hierarchy. Task lists belong to requested procedures/tracking, not learner assessment. |
 | Compare or expose a contract | Parallel tables with consistent dimensions; include relevant conditions, operations, and consequences. Split dense cells or independent decisions. |
 | Show actual behavior | Language-labelled fenced code/configuration, separate output blocks, or state traces. Explain consequential lines nearby and label hypothetical/untested material. |
-| Highlight a boundary | Use the main standard’s callout labels and severity; blockquotes, supported alerts, or ordinary labelled text provide the presentation. |
+| Highlight a distinction, boundary, or result | Use the main standard's callout labels and severity. Default to labelled Markdown blockquotes or supported alerts; ordinary labelled text is a plain-text/unsupported-viewer fallback. |
 | Explain relationships | Mermaid, images with useful alt text/captions, or supported mathematical notation. Follow diagram-guidance.md for visuals; define math symbols/units and provide readable equations when rendering is unavailable. |
 | Supply evidence | Descriptive inline links and the source section. Reference-style link definitions can keep source Markdown manageable without changing citation meaning. |
 | Control rhythm | Whitespace and focused paragraphs; separators only between meaningful units. Deliberate line breaks suit addresses/verse or comparable layouts, not every sentence. Escape Markdown characters when displaying literal syntax. Restrained heading emoji follow SKILL.md. |
@@ -32,6 +32,8 @@ Choose descriptive headings and a coherent progression suited to the subject;
 title, numbering, and the Structured subdivision label scheme are optional.
 When headings are used, nest them semantically. Keep selective emphasis, readable
 tables, nearby explanations, accessible fallbacks, and essential boundaries visible.
+Apply the shared heading-cue and callout defaults; flexible organization does not
+make a substantial article visually plain by default.
 Contents remain opt-in. Use ordered steps when procedure order matters.
 
 Integrate examples and qualifications where they explain behavior; do not force
@@ -58,7 +60,7 @@ a Structured broad article still contains all eight major sections.
 ```markdown
 # Collections and lookup
 
-## 3. How it works
+## 3. ⚙️ How it works
 ### 3.1 Elements and identity
 [Explanation.]
 
@@ -79,7 +81,7 @@ Step 2. Check the key and select the result.
 ##### b. Updating a mapping
 [Explanation.]
 
-## 4. Worked examples
+## 4. 🔎 Worked examples
 ### 4.1 Resolving a lookup
 [Resolved case referring to 3.2(iii), Maps, or
 3.2(iii)(a), Key lookup, when needed.]
@@ -187,8 +189,10 @@ behavior before applying the model to a real system.
 
 #### 7. 📌 Takeaway
 Two facts govern the result: the stored value determines what a hit returns, and
-the deadline determines whether a read may reuse it. A source change alone changes
-neither fact in this cache.
+the deadline determines whether a read may reuse it.
+
+> **Key distinction:** A source change alone changes neither the stored value nor
+> the reuse deadline in this cache.
 
 #### 8. 📚 Sources
 Supplied fictional contract above. Product-specific guarantees would require the
