@@ -1,18 +1,27 @@
 # Structures by reader goal
 
-This file defines the non-broad structures. SKILL.md owns routing, the full broad
+This file defines purpose-specific content and Structured layouts. SKILL.md owns routing, the full broad
 lesson, shared depth, source fidelity, and navigation. If changing a template,
 update its routing row too. A heading count does not establish explanatory quality;
 the functions below must be fulfilled. These structures are user-approved design
 choices, not experimentally validated teaching categories.
 
+Fixed stage names, counts, and section placement below apply to Structured
+Layout. In Free Layout, retain the purpose's substantive requirements and logical
+dependencies while choosing topic-specific organization. Comparison tables,
+completed examples, ordered tutorial actions, evidence-based diagnosis, and
+source rules still apply. A free comparison can interleave its shared scenario
+and mechanisms; a free diagnosis can group evidence and explanation by hypothesis.
+
 ## Broad concept
 
-Use the eight numbered sections in SKILL.md, in order, without merging or silently
+In Structured Layout, use the eight numbered sections in SKILL.md, in order, without merging or silently
 omitting them. Keep topic-specific content and subsections flexible. Apply the
 compact/developed profile and clarification rules in SKILL.md; broad structure
 does not itself select developed depth. The major functions are definition/purpose,
 overview, mechanism, worked examples, applicability, boundaries, takeaway, sources.
+Free Layout integrates these applicable functions across the article without
+requiring separate sections.
 
 ## Comparison
 
@@ -27,7 +36,7 @@ overview, mechanism, worked examples, applicability, boundaries, takeaway, sourc
 7. 📌 The takeaway
 8. 📚 Sources
 
-Preserve these stages for substantial comparison, with topic-specific titles allowed.
+Preserve these stages for substantial Structured comparisons, with topic-specific titles allowed.
 Begin by defining the compared items and their relationship: substitutes,
 complementary layers, categories at different levels, or historical versions.
 Do not pretend two things solve the same problem when their purposes differ.
@@ -76,7 +85,7 @@ full lesson.
 7. 📌 What was built—and how it works
 8. 📚 Sources
 
-Use these stages for a substantial guided tutorial; an explicitly tiny walkthrough
+Use these stages for a substantial Structured guided tutorial; an explicitly tiny walkthrough
 can combine its functional content. State the intended final behavior and relevant
 environment, versions, permissions, inputs, and dependencies. Do not add unnecessary
 installation work when the requested context already supplies it.
@@ -132,6 +141,7 @@ It does not need an entire OAuth flow survey.
 5. ⚠️ Boundaries and version-specific details
 6. 📚 Sources
 
+The numbered reference stages apply in Structured Layout.
 For a small set of entries, a clear purpose sentence, consistent table, example,
 and relevant caveats can combine these functions. Explain the contract and
 interactions; pure factual lookup alone does not require this skill.
@@ -165,8 +175,8 @@ should become nearby prose, not dense miniature articles.
 8. 📚 Sources
 
 Preserve evidence -> mechanism -> correction -> expected behavior. If the cause
-is established, omit the hypothesis survey and renumber the remaining headings.
-If the cause is uncertain, keep section 3's title and explanation explicitly
+is established, omit the hypothesis survey; renumber remaining headings when using
+the Structured stages. If the cause is uncertain, keep its explanation and any title explicitly
 conditional; present evidence-dependent correction branches, not a false diagnosis.
 For short questions, combine stages while preserving this reasoning.
 
@@ -209,10 +219,12 @@ are central; for algorithms or science, traces or calculations may serve better.
 ## Shared application rules
 
 Apply SKILL.md's scope, depth, navigation, source-fidelity, and no-assessment rules.
-Use topic-specific headings without erasing required stages. The broad lesson is
-fixed; comparison/tutorial backbones are stable; focused presentation is flexible;
-reference and diagnosis adapt to entry count and evidence as specified above.
-Do not apply a blanket "merge any sections" permission across all modes.
+In Structured Layout, use topic-specific headings without erasing required stages:
+the broad lesson is fixed, comparison/tutorial backbones are stable, focused
+presentation is flexible, and reference/diagnosis adapt as specified above.
+In Free Layout, sections may combine, reorder, or integrate functions; verify
+coverage and logical dependencies instead of stage count. Do not carry that
+permission into Structured Layout without an explicit user override.
 
 Explicit user constraints override templates. For mixed requests use the dominant
 goal and nest supporting functions. Do not add an irrelevant stage or fake content

@@ -3,8 +3,8 @@ name: deep-learning-mentor
 description: >-
   Explain technology, engineering, mathematics, and science through compact or developed,
   concept-first lessons, comparisons, guided explanations, and focused answers.
-  Route by the reader's goal; use a consistent eight-section structure for broad
-  lessons, causal mechanisms, resolved examples, and faithful sources. Not for
+  Route by the reader's goal and depth; default to structured layouts and support
+  requested free layouts with causal mechanisms, resolved examples, and faithful sources. Not for
   routine factual lookup or troubleshooting without learning intent.
 ---
 
@@ -29,13 +29,13 @@ checking an artifact's behavior is not assessing the learner. Teaching does not
 authorize saving notes, changing systems, or executing an implementation.
 
 The reader's explicit scope, length, and formatting requests take precedence over
-the defaults below. Treat the fixed broad-lesson format as this user's navigation
+the defaults below. Treat the Structured broad-lesson format as this user's navigation
 contract, not a scientifically proven optimum. Research informs explanatory
 principles; it does not guarantee retention, competence, or identical model output.
 
 ## Route the request before drafting
 
-Resolve purpose, depth, and scope independently from the request and established
+Resolve purpose, depth, layout, and scope independently from the request and established
 conversation preferences. Ask before drafting when an unresolved choice would
 materially change the article; ask only missing decisions, bundle related choices,
 and describe their practical difference. Wait for the answer before dependent
@@ -56,7 +56,7 @@ Article grouping does not authorize roadmap restructuring or progress changes.
 
 Choose purpose first using the table below. “Teach me” alone selects neither a
 tutorial nor developed depth. “How to build/do” indicates a tutorial; a concept
-article explains the subject through the broad backbone. A bare topic without
+article fulfills the broad explanatory functions in the selected layout. A bare topic without
 usable context may need clarification. Infer prior knowledge from demonstrated
 context, not a job title alone; bridge missing prerequisites without restarting
 established lessons.
@@ -76,13 +76,15 @@ unclear, ask whether the reader wants a concept article or a step-by-step tutori
 | Developed | Preserve the same scope; expand causal steps, prerequisite bridges, derivations, and additional resolved cases for materially different behavior. Keep navigation and wording economical. |
 
 Both profiles preserve accuracy, qualifications, sources, and example completion.
-Both broad profiles use all eight major sections; their lengths may differ greatly.
+In Structured Layout, both broad profiles use all eight major sections; their
+lengths may differ greatly. Free Layout preserves their applicable explanatory
+functions without requiring those headings or separate sections.
 For other purposes, use the required functions below and scale treatment to the
 profile; a focused answer does not acquire an eight-section survey.
 
-| Primary goal | Required backbone | Permitted flexibility |
+| Primary goal | Explanatory functions (Structured order) | Permitted flexibility |
 |---|---|---|
-| Broad concept | All eight numbered major sections below, in order | Topic subtitles, subsections, representations, relative depth |
+| Broad concept | Definition/purpose; overview; mechanisms; worked examples; applicability; boundaries; synthesis; sources | Eight numbered sections in Structured; topic-led organization in Free |
 | Substantial comparison | Shared framing; overview table; mechanisms; shared scenario; implications/choice; boundaries; takeaway; sources | Comparison dimensions and depth; no fabricated choice between complementary concepts |
 | Guided tutorial | Goal; prerequisites; approach; ordered walkthrough; behavior trace; failures/boundaries; synthesis; sources | Steps, artifacts, and explanation placement |
 | Focused question | Direct answer; necessary reasoning; example/boundary as needed; citations | Headings optional; depth follows difficulty, not prompt length |
@@ -100,11 +102,46 @@ for each alternative. Explicit brief/plain-text requests override major headings
 and emoji when incompatible; preserve the essential answer and applicable caveats.
 A narrow question may still need deep reasoning without a survey of the topic.
 
+### Choose layout independently
+
+Use **Structured Layout** by default, or an established layout preference.
+Select **Free Layout** for explicit requests such as "free layout," "without a
+template," "natural article structure," or "organize it however best explains the
+topic." This choice applies to any of the six purposes and either depth profile;
+it is not a seventh purpose. Compact/developed or brief/deep requests do not
+select layout. "No numbered headings" changes numbering alone unless the reader
+also asks to change structure. Do not ask a layout question when the default,
+context, or an explicit instruction resolves it.
+
+Structured Layout uses the purpose's existing stages and compact exceptions.
+Free Layout chooses headings, grouping, order, and representations for the topic.
+Examples, trade-offs, boundaries, and synthesis may be integrated beside the
+mechanisms they explain. No fixed section count, stage names, numbering, separate
+title, or dedicated overview/example/takeaway section is required. Do not recreate
+a prescribed template merely by renaming its headings.
+
+In Free Layout, preserve the selected purpose's explanatory functions across the
+whole answer, at the chosen depth and scope. These are coverage checks, not a
+hidden list of sections. Establish prerequisites before relying on them and
+support conclusions with mechanisms and evidence. Comparisons still use
+corresponding criteria and a shared case; tutorials still need ordered actions
+and completed behavior; diagnoses still distinguish evidence from hypotheses.
+Retain applicable comparison tables, example completion, source fidelity,
+uncertainty, and all authorization/no-assessment boundaries.
+
+The content standards below for mechanisms, examples, applicability, boundaries,
+and sources apply in both layouts where relevant to the purpose. Their numbered
+placement and dedicated-section requirements apply only in Structured Layout.
+Free substantial articles retain inline citations and a plain source list, whose
+placement and heading are flexible; focused/explicitly brief answers retain
+proportional citation rules. Consult the shared reference guidance in either layout.
+
 ### Read the relevant operational references
 
 - For comparison, tutorial, reference, or diagnosis: read the matching section and
   "Shared application rules" in [explanation-formats.md](references/explanation-formats.md)
-  before drafting. The full broad template and focused logic are self-contained here.
+  before drafting. In Free Layout use its substantive guidance, not its fixed
+  stage counts or section placement. The broad functions and focused logic are here.
 - Before writing any Mermaid block, diagram image, or other explanatory visual: read
   [diagram-guidance.md](references/diagram-guidance.md) before constructing it.
   Plain comparison/reference tables follow the navigation rules below and do not
@@ -116,6 +153,8 @@ A narrow question may still need deep reasoning without a survey of the topic.
 - For article presentation choices or calibrating compact versus developed output:
   read [article-presentation.md](references/article-presentation.md). Its paired examples
   illustrate editorial treatment, not subject coverage to copy into other articles.
+  For Free Layout, read its shared representation toolkit and Free Layout guidance;
+  numbered navigation and paired Structured examples are optional calibration.
 - For discussing or maintaining pedagogy: read the relevant evidence cards and
   conflict resolutions in [learning-evidence.md](references/learning-evidence.md).
   Read its maintenance protocol when adding/changing research-derived rules.
@@ -172,12 +211,14 @@ important relationship materially easier to reconstruct. Do not default to prose
 merely to avoid the visual reference, or add a diagram solely to fill a quota.
 Read diagram-guidance.md when a diagram, plot, or explanatory image is selected.
 
-## Full broad lesson: eight required sections
+## Broad lesson: shared content standards and Structured template
 
-Use all eight numbered major headings below, in this order. Preserve each heading's
-recognizable function; a topic-specific subtitle may follow. Do not merge, replace,
-or silently omit major sections for a full broad lesson. If a conventional treatment
-does not apply, fulfill the section's relevant purpose rather than invent filler:
+In Structured Layout, use all eight numbered major headings below, in this order.
+In Free Layout, apply the relevant content standards without fixed placement.
+Preserve each Structured heading's recognizable function; a topic-specific subtitle
+may follow. Do not merge, replace, or silently omit major sections for a Structured
+broad lesson. If a conventional treatment does not apply, fulfill the section's
+relevant purpose rather than invent filler:
 a scientific model's applicability belongs in section 5; its assumptions and
 limitations belong in section 6. An explicit user override is the exception.
 
@@ -196,8 +237,9 @@ developing internals. For a family of approaches, include an overview table show
 role and key distinction. Do not let the actors table substitute for a necessary
 map of flow types. Separate independent classification axes instead of mixing them.
 
-The branch overview belongs here, before section 3's first detailed mechanism;
-moving it after a long deep dive defeats its orientation purpose.
+In Structured Layout, the branch overview belongs here before section 3's first
+detailed mechanism. In Free Layout, orient the reader before an extended deep dive;
+a brief opening example may precede that orientation when it helps establish purpose.
 
 Use a purposeful diagram when it clarifies structure or interaction, following the
 visual reference. Explain what to notice. Locate peripheral variants here or in
@@ -250,7 +292,8 @@ When concrete syntax or intermediate state is central to understanding, provide
 an appropriately scoped request/response pair, code/pseudocode, configuration,
 state trace, or worked calculation instead of leaving it entirely abstract.
 Select the form using the calibration reference; examples may sit beside mechanisms
-as well as in this dedicated section. No code or example quota applies per branch.
+as well as in the Structured example section. Free Layout can integrate them
+entirely beside mechanisms. No code or example quota applies per branch.
 
 For protocol/API examples, show the representative exchanges needed to resolve
 the anchor and selected important-type cases: relevant request parameters, headers,
@@ -275,9 +318,10 @@ steps. Declare illustrative endpoints and payloads. Verify derived values when
 claiming an exact computation; otherwise label the representation schematic.
 Place explanation beside consequential fields/lines rather than dumping syntax.
 
-General mechanisms belong in section 3; this section demonstrates their concrete
+In Structured Layout, general mechanisms belong in section 3; this section demonstrates their concrete
 consequences. Small illustrative steps may appear beside the mechanism, but do not
-remove the dedicated resolved worked-example section from a full lesson.
+remove the dedicated resolved worked-example section from a Structured broad lesson.
+Free Layout preserves completed worked examples wherever they best explain behavior.
 
 Choose the example set by profile. Compact broad articles favor one coherent anchor
 and small resolved demonstrations for consequential behavior the anchor cannot
@@ -346,12 +390,16 @@ Focused and explicitly brief answers can use proportional inline citations.
 
 ## Navigation and representations
 
-For substantial articles, use a semantic hierarchy under the selected format,
-with an H1 title. Number majors where that format requires it; the eight major
-sections remain required for broad lessons. Focused answers retain optional
+For substantial articles, use a semantic hierarchy under the selected layout.
+Structured articles use an H1 title and number majors where their format requires
+it; the eight major sections remain required for Structured broad lessons.
+Free Layout uses descriptive headings where useful; title, numbering, and the
+subdivision label scheme below are optional. Focused answers retain optional
 headings, and explicit brief/plain-text requests retain their overrides.
 
-When independently revisitable topics warrant subdivisions, use this hierarchy:
+When independently revisitable topics warrant subdivisions, use semantic heading
+levels. Structured Layout uses the following label scheme; Free Layout may use
+unnumbered headings or adopt the scheme consistently when it helps navigation:
 
 | Content level | Markdown heading | Label example |
 |---|---|---|
@@ -368,7 +416,7 @@ that serve the content, never filler or artificial intermediate branches. Short
 local labels may remain descriptive unnumbered headings, bullets, or callouts.
 Do not skip semantic heading levels on descent or replace real headings with bold
 lines. Use Step 1, Step 2 for sequential procedures. Keep headings descriptive and
-concept-first; topic-specific major subtitles must preserve required functions.
+concept-first; Structured major subtitles must preserve their required functions.
 
 Cross-references include the parent and concept, for example “3.2(iii), Maps” or
 “3.2(iii)(a), Key lookup”; avoid ambiguous bare numerals or letters. Refer to
@@ -403,7 +451,8 @@ fuller toolkit; select features by usefulness, not counts. Task lists serve requ
 procedures/tracking; never change roadmap progress without clear direction. Saving
 or editing files still requires authorization.
 
-Use at most one restrained emoji per major heading: definition/goal 🎯, overview 🧭,
+Use at most one restrained emoji per major heading when cues are useful; in Free
+Layout the stage-specific mapping is optional. Available cues: definition/goal 🎯, overview 🧭,
 mechanism ⚙️, example/trace 🔎, comparison/decision ⚖️, prerequisites 🧰,
 procedure/correction 🛠️, boundaries ⚠️, synthesis 📌, sources 📚.
 Omit cues for short answers, formal deliverables, or explicit plain formatting.
@@ -470,9 +519,11 @@ of each article. Observe quotation and reuse limits.
 
 Silently check these four dimensions and repair actual weaknesses before sending:
 
-1. **Coverage:** purpose, profile, and scope follow the request/context; material
-   ambiguities were resolved. Preserve the selected template's functions, including
-   all eight broad sections. Principal branches have mechanisms and boundaries;
+1. **Coverage:** purpose, profile, layout, and scope follow the request/context;
+   material ambiguities were resolved. Structured Layout preserves the selected
+   template, including all eight broad sections. Free Layout preserves applicable
+   explanatory functions across the answer without forced stages or a renamed
+   template. Principal branches have mechanisms and boundaries;
    shared foundations are consolidated without dropping meaningful distinctions.
    No favorite scenario substitutes for scope or essential content is deferred.
 2. **Understanding and fidelity:** the reader can reconstruct consequential behavior
@@ -488,7 +539,8 @@ Silently check these four dimensions and repair actual weaknesses before sending
    Retain prerequisite bridges and outcome-changing conditions at the selected depth.
    A choice recommendation does not replace an operational example.
 4. **Presentation:** scan the outline and highlighted text: every selected topic is
-   locatable through descriptive headings. Check semantic levels, optional decimal/
+   locatable through suitable headings or direct organization for short answers.
+   Check semantic levels where headings are used, optional decimal/
    Roman/letter subdivisions and their parent resets, useful link targets where
    possible, and parent-and-concept cross-references. No depth or filler is forced;
    standalone contents appear only when explicitly requested. Highlights expose

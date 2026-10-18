@@ -9,6 +9,11 @@ Compact articles retain consequential inputs/checks/outcomes with smaller cases;
 developed articles expand reasoning and important-type cases. The paired editorial
 example is in article-presentation.md.
 
+These depth and example-completion standards apply in both layouts. Free Layout
+may integrate a resolved case into its mechanism or unfold it across connected
+sections; preserve its inputs, consequential intermediate behavior, result, and
+interpretation. Placement does not change the chosen depth or scope.
+
 ## Domain-sensitive depth
 
 | Subject | Consequential detail to expose | Concrete support when useful |
@@ -143,9 +148,11 @@ they are not a requirement to make every short answer a full lesson.
 
 ## Selecting and connecting worked examples
 
-Use the roles below as choices within the existing worked-example section, not
-new required lesson stages. SKILL.md's completion contract applies to each case
-or consequential stage. Example count follows the topic and requested scope.
+Use the roles below to select examples, not to create additional required stages.
+In Structured Layout, retain the dedicated worked-example section where the
+selected format requires it; in Free Layout, place examples where they best explain
+the associated mechanisms. SKILL.md's completion contract applies to each case or
+consequential stage. Example count follows the topic and requested scope.
 
 | Role | Purpose | When useful |
 |---|---|---|

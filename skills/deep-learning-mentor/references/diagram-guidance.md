@@ -8,6 +8,9 @@ principles, and this user's navigation preferences. Source rationale and limits
 are in learning-evidence.md. No particular renderer or diagram count is validated
 as universally best for learning.
 
+This guidance applies equally to Structured and Free Layout. Select and place
+visuals for the relationship they explain, independent of template stages.
+
 ## Decide whether a visual is needed
 
 For substantial lessons, consider what the reader must mentally reconstruct.

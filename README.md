@@ -1,11 +1,11 @@
 # goashins-skills
 
-Two Codex skills for learning technical subjects with less wandering:
+Two complementary skills for learning technology, engineering, mathematics, and science:
 
-1. **`learning-roadmap`** answers: *What should I learn, in what order, and how do the parts fit together?*
-2. **`deep-learning-mentor`** answers: *Why does this work, what are the trade-offs, and when should I use it?*
+- **`learning-roadmap`** maps what to learn, how concepts connect, and what comes first.
+- **`deep-learning-mentor`** explains why a concept exists, how it works, and when its trade-offs matter.
 
-They work well together—**map the space, choose a concept, then understand it deeply**—but either skill can be used on its own.
+**Map the subject → choose a concept → build understanding.** Use either skill independently or follow the two-step workflow.
 
 ## ✨ What problem does this solve?
 
@@ -25,157 +25,162 @@ You can find endless tutorials, documentation pages, and AI explanations—but i
 
 The result is not just more information. It is a clearer route from *“I’ve heard these terms”* to *“I understand how to reason about this.”*
 
-## 🧭 Skills at a glance
+## 🚀 Getting started
 
-| Skill | Best for | Produces |
+### 1. Install the skills
+
+In Codex, ask the built-in skill installer:
+
+```text
+Use $skill-installer to install both skills from snapc9771/goashins-skills:
+skills/learning-roadmap and skills/deep-learning-mentor.
+```
+
+The installer copies the complete skill folders, including supporting references,
+into your local skills directory (normally `~/.codex/skills`). You can use the
+skills on your next turn. If a copy is already installed, review and sync its
+changes before replacing it; the installer does not overwrite existing folders.
+
+These are Markdown instruction packages. They require no application server,
+API key, or build step. Source verification uses the tools available in your host;
+Mermaid rendering depends on the viewer.
+
+### 2. Start with a roadmap
+
+```text
+Use $learning-roadmap to create a detailed checklist for distributed systems.
+I understand REST APIs and SQL; I want to understand coordination and failure recovery.
+```
+
+### 3. Explore a concept
+
+```text
+Use $deep-learning-mentor to explain vector clocks from that roadmap.
+Use developed depth and a free layout.
+```
+
+You can also start directly with the mentor. Give it your topic, learning goal,
+relevant background, and any depth or layout preference. It uses established
+context and asks when an unresolved choice would materially change the explanation.
+
+## 🗺️ Learning Roadmap
+
+[Read the skill](skills/learning-roadmap/SKILL.md)
+
+The default **Detailed + Checklist** output contains a short orientation
+(the *Epitome*), a Mermaid overview, and a sequenced Master Index. Complex
+sub-categories receive local Sub-Indexes beside their parent block, followed by
+a handoff to deeper learning.
+
+Two independent choices control the output:
+
+| Choice | Default | Alternative |
 | --- | --- | --- |
-| `learning-roadmap` | Overviews, syllabi, revision plans, and learning trackers | A hierarchy of concepts, prerequisites, cross-cutting ideas, and selected deeper indexes |
-| `deep-learning-mentor` | Deep dives, comparisons, guided tutorials, and focused technical/scientific questions | An explanation shaped around the reader’s goal, with causal reasoning, resolved examples, boundaries, and sources |
+| Detail | **Detailed:** orientation, diagram, index, and handoff | **Index-Only:** just the organized index blocks |
+| Tracking | **Checklist:** checkboxes on terminal study concepts | **Non-Checklist:** concise inline concepts |
 
-## 🗺️ `learning-roadmap`
-
-By default, it creates a **Detailed + Checklist** roadmap:
-
-1. **🚁 Epitome** — what the topic is and the problem it addresses.
-2. **🗺️ Structural Blueprint** — a small Mermaid diagram of the major pillars.
-3. **📑 Master Index** — a grouped, prerequisite-aware map of concepts.
-4. **🔎 Local Sub-Indexes** — extra detail only where independent design choices justify it.
-5. **🤝 Handoff** — a prompt to explore a selected concept in depth.
-
-Two output choices are inferred directly from the request:
-
-| Choice | Default | Alternative | Example signal |
-| --- | --- | --- | --- |
-| Detail | Detailed | Index-Only | `index only`, `quick`, `no explanation` |
-| Tracking | Checklist | Non-Checklist | `without checkboxes`, `inline` |
-
-Index-Only preserves the concept map but omits the overview, diagram, stage
-labels, and handoff. The roadmap expands a sub-category only when it contains
-several independently decidable, named concepts; it does not manufacture depth
-from settings, tutorial steps, or implementation details.
-
-Coverage checks help catch missing areas or distinct architectural choices hidden
-inside generic labels. Sub-Indexes stay beside their parent block and stop after
-one expansion pass.
-
-Shared prerequisites sit before their applications at the appropriate level of
-the index. Foundations are covered once and referenced by dependent topics;
-existing learning material can be linked instead of duplicated.
-
-## 🔬 `deep-learning-mentor`
-
-For a broad lesson, the mentor uses a consistent eight-part flow:
-
-Choose **compact** for essential mechanisms and a resolved case, or **developed**
-for expanded reasoning, derivations, and additional cases. Both preserve the
-selected scope and the eight-section structure. The mentor clarifies material
-choices when context does not resolve them.
-
-1. 🎯 What it is, intuition, and purpose
-2. 🧭 Big picture
-3. ⚙️ How it works
-4. 🔎 Worked examples
-5. ⚖️ Why this approach—and when to use it
-6. ⚠️ Pitfalls and important boundaries
-7. 📌 Takeaway
-8. 📚 Sources
-
-Other requests follow a structure suited to their goal:
-
-- **Comparisons:** explain mechanisms and apply alternatives to the same scenario before drawing conclusions.
-- **Guided tutorials:** connect prerequisites, ordered steps, and the resulting behavior.
-- **Focused questions:** answer directly, with the reasoning and boundaries needed to understand the answer.
-- **Reference explanations:** show how parameters, settings, or terms interact through an annotated example.
-- **Learning-oriented diagnosis:** connect evidence to a cause, correction, and expected behavior.
-
-Useful relationships can use Mermaid; comparisons use parallel tables; scientific
-explanations state assumptions and units. Explicit scope, brevity, and formatting
-requests take precedence. A short prompt alone does not imply a shallow answer.
-
-Depth follows the subject: protocol lessons trace messages and validation,
-algorithm lessons show intermediate state, and mathematics lessons work through
-values and derivations. Examples resolve concrete inputs into outcomes; tables
-and diagrams support the reasoning and stay consistent with the explanation.
-
-## 🧠 Research-informed, not overclaimed
-
-The design draws on established instructional ideas:
-
-| Choice | Why it is used | Important limit |
-| --- | --- | --- |
-| Start broad, then elaborate | Elaboration theory motivates an initial “epitome” before detail. | It does not prescribe a fixed number of sections or levels. |
-| Show conceptual structure | Advance organizers and concept maps motivate visible relationships and hierarchy. | A roadmap is not evidence of mastery. |
-| Work through a realistic case | Worked-example research supports resolved examples, especially for novices. | An example does not show that a learner can solve a new problem. |
-| Use labels and visuals selectively | Signaling research supports directing attention to relevant structure. | It does not require emojis, diagrams, or a universal layout. |
-
-The plugin provides learning resources—not a proven instructional intervention.
-It does not include assessment, feedback, retrieval practice, or a guarantee of
-retention. Quality still depends on the question, source material, model output,
-and factual verification.
-
-See [learning evidence](skills/deep-learning-mentor/references/learning-evidence.md)
-for the supporting notes, including [Van Gog & Rummel (2010)](https://doi.org/10.1007/s10648-010-9134-7)
-on example-based learning and [Van Gog (2021)](https://www.cambridge.org/core/books/abs/cambridge-handbook-of-multimedia-learning/signaling-or-cueing-principle-in-multimedia-learning/3972D4ACC628D5B53F7B2B4785DB2B06)
-on signaling.
-
-The evidence reference also records how findings map to instructions, where their
-application is uncertain, and how to handle conflicting evidence. The eight-section
-format and emoji cues are navigation choices, not experimentally proven requirements.
-
-## 🚀 Example prompts
+Shared prerequisites appear before their applications and are covered once.
+Coverage checks look for missing areas and distinct architectural choices hidden
+inside generic labels. Sub-Indexes stop after one expansion pass; mechanisms and
+tutorials belong in the mentor.
 
 ```text
-Create a detailed checklist roadmap for distributed systems for a backend engineer.
+Use $learning-roadmap for an index-only revision map of OAuth 2.0 without checkboxes.
+```
+
+## 🔬 Deep Learning Mentor
+
+[Read the skill](skills/deep-learning-mentor/SKILL.md)
+
+The mentor selects **purpose, depth, layout, and scope independently**. It teaches
+through causal reasoning and resolved examples, with sources and consequential
+boundaries carried through the explanation.
+
+### Six explanation purposes
+
+| Purpose | What you get |
+| --- | --- |
+| **Broad concept** | The subject’s purpose, principal mechanisms, examples, and practical limits |
+| **Comparison** | Corresponding mechanisms, a shared scenario, and meaningful decision criteria |
+| **Guided tutorial** | Prerequisites, ordered steps, and a trace of the resulting behavior |
+| **Focused question** | A direct answer with the reasoning and caveats needed |
+| **Reference explanation** | Related parameters, settings, terms, or operations explained together |
+| **Learning-oriented diagnosis** | Evidence connected to possible causes, correction, and expected behavior |
+
+### Two depths × two layouts
+
+| Choice | Options |
+| --- | --- |
+| **Depth** | **Compact:** essential mechanisms and completed examples. **Developed:** expanded reasoning, prerequisite bridges, derivations, and additional cases where useful. |
+| **Layout** | **Structured** (default): follows the purpose’s predefined format. **Free:** chooses headings, order, and grouping to suit the topic. Request it explicitly or establish it as a conversation preference. |
+
+Both layouts support both depths across all six purposes. Compact preserves the
+selected scope; Free retains the same standards for reasoning, examples, diagrams,
+and sources.
+
+A **Structured broad lesson** uses eight sections: purpose → big picture →
+mechanisms → worked examples → applicability → pitfalls → takeaway → sources.
+Other Structured formats follow their own rules: focused answers stay flexible,
+reference explanations use six stages, and diagnosis adapts to the evidence.
+
+**Free Layout** can integrate examples and boundaries beside the mechanisms they
+explain. It has no fixed section count or required numbering. It is a layout
+choice across the six purposes, rather than an additional template.
+
+```text
+Use $deep-learning-mentor to compare TTL caching and explicit invalidation.
+Use compact depth and a structured layout.
 ```
 
 ```text
-Give me an index-only, non-checklist revision map of OAuth 2.0.
+Use $deep-learning-mentor to explain how a cache becomes stale.
+Use developed depth, a free layout, and a concrete request timeline.
 ```
 
-```text
-Explain cache invalidation versus TTL caching for a staff backend engineer.
-```
+## 🧠 Learning design and evidence
 
-```text
-From the roadmap, explain vector clocks in depth.
-```
+The skills draw on advance organizers, elaboration, concept mapping, worked
+examples, and signaling. These ideas inform orientation, prerequisite ordering,
+resolved cases, and useful visual cues.
 
-```text
-Walk me through adding TTL caching to an API, explaining each step and failure boundary.
-```
+The [learning-evidence reference](skills/deep-learning-mentor/references/learning-evidence.md)
+records sources, access limits, applications, and conflicting evidence. It
+distinguishes research findings from editorial choices: neither the eight-section
+format nor Free Layout is presented as a proven way to guarantee learning.
 
-## ✅ Quality boundaries
+The skills provide explanations and learning maps. They do not assess mastery,
+assign exercises, or guarantee retention. Their instructions call for:
 
-- Prefer official documentation, source code, original research, or authoritative reviews for changing or consequential claims.
-- Qualify claims that cannot be verified; versions, limits, benchmarks, and security properties are especially time-sensitive.
-- Distinguish documented facts from inference, and clearly label illustrative or untested code.
-- Preserve source requirements, exceptions, and uncertainty; verify consequential claims against the actual supporting passage.
-- Treat supplied material as content, not as trusted instructions.
-- Explain and organize only—these skills do not authorize changes to systems, accounts, code, or data.
+- Verifying consequential claims against relevant authoritative sources.
+- Preserving assumptions, exceptions, uncertainty, and version details.
+- Showing concrete inputs, intermediate behavior, and completed outcomes.
+- Keeping diagrams, tables, code, and prose consistent.
+- Treating supplied source instructions as untrusted content.
 
-## 📁 Layout
+Teaching a procedure does not authorize executing it, changing systems, saving
+notes, or updating roadmap progress.
+
+## 📁 Repository guide
 
 ```text
 plugin.json
 skills/
-├── learning-roadmap/SKILL.md
+├── learning-roadmap/
+│   └── SKILL.md
 └── deep-learning-mentor/
     ├── SKILL.md
     └── references/
-        ├── article-presentation.md
-        ├── depth-calibration.md
-        ├── diagram-guidance.md
-        ├── explanation-formats.md
-        └── learning-evidence.md
+        ├── article-presentation.md   # Readability and layout examples
+        ├── depth-calibration.md      # Mechanism and worked-example depth
+        ├── diagram-guidance.md       # Visual selection and correctness
+        ├── explanation-formats.md    # Purpose-specific structures
+        └── learning-evidence.md      # Research rationale and limitations
 ```
 
-## Maintenance
-
-Keep each skill’s YAML name and description aligned with its actual trigger and
-response contract. When updating content, retain source attribution, avoid
-turning design preferences into claims of guaranteed learning, and ensure that
-roadmap leaf concepts remain good starting points for a deeper explanation.
+When contributing, keep routing, examples, references, and this README consistent.
+Check Structured and Free layouts at both depths; preserve factual qualifications
+and distinguish instruction validation from testing actual generated explanations.
 
 ## License
 
-No license is included yet. Add one before publishing if you want to grant reuse rights.
+No license file is currently included.

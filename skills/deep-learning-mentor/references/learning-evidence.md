@@ -7,7 +7,7 @@ and primary professional guidance. Access notes distinguish full-text passages
 from publisher summaries; unavailable methods were not treated as inspected.
 
 Separate empirical findings, professional guidance, and design inferences.
-The concept-first emphasis, fixed broad-lesson navigation contract, goal-specific structures,
+The concept-first emphasis, Structured broad-lesson navigation contract, goal-specific structures,
 and emoji vocabulary are design choices informed by relevant principles. No cited
 study establishes an optimal section count, validates this skill, or promises
 consistent results across different models. Multimedia findings do not directly
@@ -328,11 +328,12 @@ Basis: Diataxis overview rechecked, with previously recorded professional writin
 sources. Diataxis separates documentation needs; our six modes and numbered
 templates are a further design choice.
 
-Application: select the primary goal before content drafting. A broad topic uses
-the user's required eight sections; focused questions use direct reasoning.
-Keep fixed navigation separate from flexible domain content.
+Application: select purpose and layout before drafting. A Structured broad topic
+uses the user's eight sections; Free Layout preserves their applicable functions
+through topic-specific organization. Focused questions use direct reasoning.
+Keep layout choices separate from domain content and depth.
 
-Check: a full lesson has both meaningful stages and substantive coverage; a narrow
+Check: a full lesson has substantive coverage and its selected layout; a narrow
 follow-up is not expanded into an unsolicited survey. Locations: SKILL.md routing;
 explanation-formats.md. Stable organization does not establish retention.
 
@@ -381,7 +382,9 @@ revisitable topics determine subdivisions, and short local labels may remain
 unnumbered. These choices are not a scientifically established universal layout
 or evidence of learning. Compact and developed substantial articles share the
 standard; detail remains independently selected, and focused/explicit-format
-overrides remain. SKILL.md owns the operational standard; article-presentation.md
+overrides remain. In Free Layout, the numbering scheme is optional while semantic
+nesting, readable references, and visible essential content still apply.
+SKILL.md owns the operational standard; article-presentation.md
 supplies an illustrative outline and the broader toolkit.
 
 Prior research for this update identified the following professional guidance;
@@ -411,7 +414,7 @@ These resolve operational tensions. They do not assert that all research agrees.
 |---|---|---|
 | Full detail versus reducing cognitive demands | Remove unrelated content; sequence and explain essential complexity | Were important branches or assumptions lost? |
 | Worked guidance versus expertise reversal | Adapt scaffolding to established domain knowledge; preserve new reasoning | Does expert content still explain the unfamiliar mechanism? |
-| Fixed broad headings versus adaptation | Fix broad navigation for this user; adapt content and choose other structures for other goals | Was the request routed correctly? |
+| Fixed broad headings versus adaptation | Keep eight broad stages in Structured; use topic-specific organization in Free, with shared content requirements | Were purpose, layout, and depth selected independently? |
 | Segmentation versus causal continuity | Use meaningful units joined by explicit relationships | Can the reader connect condition, mechanism, and result? |
 | Contiguity versus redundancy | Integrate mutually dependent information; avoid needless complete duplication | Does each representation contribute or enable access? |
 | Engaging examples versus seductive details | Keep an example when it explains the target relationship; remove unrelated ornament | Does the detail alter understanding of the requested concept? |
@@ -472,10 +475,26 @@ cross-model consistency; one forward test is evidence for that output only.
 ## Editorial update: purpose, depth, and Markdown presentation
 
 Compact/developed profiles, clarification before material routing choices, the
-shared eight-section broad backbone, and purposeful Markdown extensions are user
+eight-section Structured broad backbone, and purposeful Markdown extensions are user
 preferences and editorial decisions. Their operational rules live in SKILL.md and
 article-presentation.md. They do not establish an optimal length, feature count, or
 retention effect. Existing evidence cards retain their study-specific caveats;
 “prose” in design examples is not a requirement to repeat reasoning already clear
 in a table, trace, or ordered explanation. Preserve explicit causal relationships
 and accessible meaning across representations.
+
+## Editorial update: Free Layout
+
+Free Layout is an explicit user-requested organization choice across the six
+purposes and two depth profiles. Structured remains the default. This changes
+headings, grouping, and placement, not the shared requirements for coverage,
+causal explanation, resolved examples, source fidelity, or boundaries. Earlier
+navigation examples and numbered stages describe Structured Layout; their
+substantive quality criteria apply in both layouts.
+
+This is an editorial preference, not a newly researched intervention or evidence
+that Free Layout improves retention. No cited study or historical access record
+was reinterpreted to justify it. Review both layouts for substantive coverage and
+completed examples, and check that Free answers vary naturally with the subject
+while Structured answers retain their required stages. Behavioral reliability
+still requires actual output evaluation; an instruction review cannot establish it.

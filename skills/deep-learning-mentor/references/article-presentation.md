@@ -2,7 +2,7 @@
 
 Read this for article formatting and compact/developed calibration. SKILL.md owns
 routing, the authoritative Navigation and representations standard, shared quality
-requirements, and the eight-section broad backbone;
+requirements, and the eight-section Structured broad backbone;
 diagram-guidance.md owns construction and delivery checks for explanatory visuals.
 These are editorial examples, not evidence that a layout guarantees retention.
 
@@ -25,13 +25,35 @@ These are editorial examples, not evidence that a layout guarantees retention.
 Use SKILL.md's viewer-support and visible-content rules throughout this toolkit.
 Features serve the information; using more of them does not establish quality.
 
-## Practical navigation outline
+## Free Layout presentation
+
+Use the shared representation toolkit above and SKILL.md's content standards.
+Choose descriptive headings and a coherent progression suited to the subject;
+title, numbering, and the Structured subdivision label scheme are optional.
+When headings are used, nest them semantically. Keep selective emphasis, readable
+tables, nearby explanations, accessible fallbacks, and essential boundaries visible.
+Contents remain opt-in. Use ordered steps when procedure order matters.
+
+Integrate examples and qualifications where they explain behavior; do not force
+separate overview, example, pitfalls, or takeaway sections. Substantial articles
+retain inline citations and a plain source list with flexible placement and heading.
+The numbered outline and paired articles below illustrate Structured Layout only.
+Their depth standards remain useful, but their arrangement is not a Free template.
+
+For example, a free caching article could open with a stale price, trace a hit and
+miss with concrete values, explain expiry at the point it changes the outcome,
+then compare invalidation under a different freshness requirement. The trace
+carries both mechanism and example; trade-offs and boundaries appear beside the
+relevant behavior. This is one possible progression, not a required outline or
+minimum length. Other subjects should use their own explanatory progression.
+
+## Practical navigation outline (Structured Layout)
 
 This hypothetical outline illustrates all five available content levels under an
 H1 title, only to show their syntax. It does not recommend five-level depth: use
 fewer levels whenever the content needs fewer independently revisitable topics.
 Earlier/later major sections and explanatory prose are omitted from this outline;
-a broad article still contains all eight major sections.
+a Structured broad article still contains all eight major sections.
 
 ```markdown
 # Collections and lookup
@@ -78,7 +100,7 @@ outcomes”; add “Table 1” only if later references benefit.
 The paired miniature articles below need no subdivisions merely to demonstrate
 the hierarchy, and no contents list unless explicitly requested.
 
-## Paired miniature broad articles
+## Paired miniature broad articles (Structured Layout)
 
 The same deliberately fictional cache contract appears below. Both examples are
 complete for this narrow contract, not templates for reducing a broad real-world
